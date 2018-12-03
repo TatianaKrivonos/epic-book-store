@@ -75,32 +75,64 @@ const dataProducts = {
 const catalogList = document.querySelector('.catalog__list');
 console.log(catalogList);
 
-const productCardMini = document.querySelectorAll('.product-card-mini');
+// const productCardMini = document.querySelectorAll('.product-card-mini');
 
-function createCards (dataProducts) {
+// function createCards (dataProducts) {
+// 	const productsArr = dataProducts.products;
+// 	let cardString = ``;
+
+// 	productsArr.forEach(function(product){
+// 		cardString = cardString + `<article class="product-card-mini">
+// 						<a href="${product.link}">
+// 							<h3 class="product-card-mini__title">${product.title}</h3>
+// 						</a>
+// 						<a href="${product.link}" class="product-card-mini__img-wrap">
+// 							<img src="../epic-book-store/img/books/${product.image}" alt="${product.title}" class="product-card-mini__img">
+// 						</a>
+// 						<p class="product-card-mini__descr">${product.description}</p>
+// 						<div class="product-card-mini__price">${product.price} P</div>
+// 					</article>`;
+// 	});
+
+// 	return cardString;
+// }
+
+
+// function insertElements(data, wrap) {
+//     const html = createCards(dataProducts);
+//     wrap.innerHTML = html;
+// }
+
+// insertElements(dataProducts, catalogList);
+
+function createCard (product) {
+	const productCard = document.createElement('article');
+	productCard.classList.add('product-card-mini');
+
+	productCard.innerHTML = `<a href="${product.link}">
+						       <h3 class="product-card-mini__title">${product.title}</h3>
+						    </a>
+							<a href="${product.link}" class="product-card-mini__img-wrap">
+								<img src="../epic-book-store/img/books/${product.image}" alt="${product.title}" class="product-card-mini__img">
+							</a>
+							<p class="product-card-mini__descr">${product.description}</p>
+	 						<div class="product-card-mini__price">${product.price} P</div>`;
+
+	return productCard;
+}
+
+function insertElements(dataProducts, catalogList) {
 	const productsArr = dataProducts.products;
-	let cardString = ``;
+	console.log(productsArr);
 
-	productsArr.forEach(function(product){
-		cardString = cardString + `<article class="product-card-mini">
-						<a href="${product.link}">
-							<h3 class="product-card-mini__title">${product.title}</h3>
-						</a>
-						<a href="${product.link}" class="product-card-mini__img-wrap">
-							<img src="../epic-book-store/img/books/${product.image}" alt="${product.title}" class="product-card-mini__img">
-						</a>
-						<p class="product-card-mini__descr">${product.description}</p>
-						<div class="product-card-mini__price">${product.price} P</div>
-					</article>`;
-	});
+	productsArr.forEach((product) => {
+		const productCard = createCard(product);
+		console.log(productCard);
 
-	return cardString;
+		catalogList.appendChild(productCard);
+	})
 }
 
-
-function insertElements(data, wrap) {
-    const html = createCards(dataProducts);
-    wrap.innerHTML = html;
+if (catalogList) {
+	insertElements(dataProducts, catalogList);
 }
-
-insertElements(dataProducts, catalogList);
