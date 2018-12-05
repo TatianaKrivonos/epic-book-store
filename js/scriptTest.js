@@ -1,16 +1,3 @@
-// function ready(fn) {
-//   if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-//     fn();
-//   } else {
-//     document.addEventListener('DOMContentLoaded', fn);
-//   }
-// }
-//
-// ready(function(){
-//   console.log('DOM ready');
-// });
-
-
 import insertElement from './modules/insertElement.js';
 import dataProducts from './modules/dataProducts.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
