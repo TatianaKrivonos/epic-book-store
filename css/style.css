@@ -4,4 +4,8 @@
 .page-header {
   display: block; }
 
+.product-card-mini__img {
+  width: 260px;
+  height: 370px; }
+
 /*# sourceMappingURL=style.css.map */
