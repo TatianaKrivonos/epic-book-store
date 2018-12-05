@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js  page">
+<head>
+	<meta charset="UTF-8">
+	<title>BOOK STORE</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+</head>
+<body>
+	<header class="contacts-header">
+		<div class="contacts-header__container">
+			<a href="./index.html" class="logo"><img src="" alt="book store"></a>
+			<div class="work-time"> с 9:00 до 19:00</div>
+			<nav class="contacts-nav">
+				<ul class="contacts__list">
+					<li class="contacts-nav__item"><a href="./books.html" class="contacts-nav__link">Книги</a></li>
+					<li class="contacts-nav__item"><a href="./recomendations.html" class="contacts-nav__link">Рекомендации</a></li>
+					<li class="contacts-nav__item"><a href="./contacts.html" class="contacts-nav__link  contacts-nav__link--active">Контакты</a></li>
+				</ul>
+				<button class="contacts-nav__toggle"></button>
+			</nav>
+		</div>
+	</header>
+	<section class="contacts-info">
+		<div class="contacts-info__container">
+			<h1 class="contacts-info__title">Контакты</h1>
+			<div class="contacts-info__row">
+				<div class="contacts-info__descr">Набережная реки Фонтанки, 202</div>
+				<div class="contacts-info__descr">С 9:00 до 19:00 ежедневно</div>
+				<div class="contacts-info__descr">+7 (911) 123-45-67</div>
+			</div>
+			<div class="contacts-info__map" id="contacts-map"></div>
+		</div>
+	</section>
+	<section class="feedback">
+		<h2 class="feedback__title">Есть вопросы?</h2>
+		<p class="feedback__text">Напишите к нам на почту. Ответим в течении дня</p>
+		<form action="#" name="contacts-form" method="post">
+			<div class="contacts-form__inputs">
+				<input type="text" placeholder="Ваша почта" name="email">
+				<input type="text" placeholder="Сообщение" name="message">
+				<input type="submit" value="Отправить">
+			</div>
+			<p><input type="checkbox" name="checkbox">Я согласен(-на) с <a href="">политикой конфиденциальности</a> и <a href="">правилами обработки данных</a></p>
+		</form>
+	</section>
+	<div class="banner">
+		<p>Мы открыли для вас уютную библиотеку</p>
+		<p>Приходите к нам по адресу Никитинская 10, каждый день с 12:00 до 18:00</p>
+	</div>
+	<footer class="contacts-footer">
+		<div class="contacts-footer__container">
+			<a href="./index.html" class="logo"><img src="" alt="book store"></a>
+			<div class="work-time"> с 9:00 до 19:00</div>
+			<nav class="contacts-footer-nav">
+				<ul class="contacts-footer__list">
+					<li class="contacts-footer__item"><a href="./books.html" class="contacts-footer__link">Книги</a></li>
+					<li class="contacts-footer__item"><a href="./recomendations.html" class="contacts-footer__link">Рекомендации</a></li>
+					<li class="contacts-footer__item"><a href="./contacts.html" class="contacts-footer__link">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+  <script type="module" src ="js/scriptTest.js"></script>
+</body>
+</html>
