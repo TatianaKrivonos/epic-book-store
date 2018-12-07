@@ -2,16 +2,16 @@ const dataProducts = {
 	products:[
 		{
 			link: '#',
-			title: 'Латеральная логика',
+			name: 'Латеральная логика',
 			image: 'book-lateralnaya-logika.jpg',
-			description: 'Головоломный путь к нестандартному мышлению',
+			desc: 'Головоломный путь к нестандартному мышлению',
 			price: '500'
 		},
 		{
 			link: '#',
 			title: 'Путиводитель по лжи',
 			image: 'book-putevoditel-po-lzhi.jpg',
-			description: 'Критическое мышление в эпоху пост правды',
+			desc: 'Критическое мышление в эпоху пост правды',
 			price: '630'
 		},
 		{
