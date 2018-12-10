@@ -2,6 +2,7 @@
 <html lang="ru" class="no-js  page">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>BOOK STORE</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script>
@@ -11,13 +12,21 @@
 <body>
 	<header class="page-header">
 		<div class="page-header__container">
-			<a href="/" class="logo"><img src="" alt="book store"></a>
+			<a href="/" class="logo">
+				<img src="" alt="book store" width="" height="">
+			</a>
 			<div class="work-time"> с 9:00 до 19:00</div>
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="./books.html" class="main-nav__link">Книги</a></li>
-					<li class="main-nav__item"><a href="./recomendations.html" class="main-nav__link">Рекомендации</a></li>
-					<li class="main-nav__item"><a href="./contacts.html" class="main-nav__link">Контакты</a></li>
+					<li class="main-nav__item">
+						<a href="./books.html" class="main-nav__link">Книги</a>
+					</li>
+					<li class="main-nav__item">
+						<a href="./recomendations.html" class="main-nav__link">Рекомендации</a>
+					</li>
+					<li class="main-nav__item">
+						<a href="./contacts.html" class="main-nav__link">Контакты</a>
+					</li>
 				</ul>
 				<button class="main-nav__toggle"></button>
 			</nav>
@@ -30,37 +39,39 @@
 					<article class="slider__item">
 						<h2 class="slider__item-title"></h2>
 						<p class="slider__item-descr"></p>
-						<a href=""><img src="" alt="" class="slider__item-img"></a>
+						<a href="">
+							<img src="" alt="" class="slider__item-img">
+						</a>
 					</article>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<main>
 		<section class="catalog">
-			<h1 class="catalog__title"></h1>
+			<h1 class="catalog__title">Каталог</h1>
+
 			<div class="catalog__tabs-wrap">
-			<ul class="catalog__tabs j-tabs">
-				<li class="catalog__tab-item">
-					<a href="#" data-type="all" class="catalog__tab-link">Все</a>
-				</li>
-				<li class="catalog__tab-item">
-					<a href="#" data-type="marketing" class="catalog__tab-link">Маркетинг</a>
-				</li>
-				<li class="catalog__tab-item">
-					<a href="#" data-type="science" class="catalog__tab-link">Научпоп</a>
-				</li>
-				<li class="catalog__tab-item">
-					<a href="#" data-type="business" class="catalog__tab-link">Бизнес</a>
-				</li>
-				<li class="catalog__tab-item">
-					<a href="#" data-type="creativity" class="catalog__tab-link">Творчество</a>
-				</li>
-				<!-- <li class="catalog__tab-item">
-					<a href="#" class="catalog__tab-link">Психология</a>
-				</li> -->
-			</ul>
+				<ul class="catalog__tabs j-tabs">
+					<li class="catalog__tab-item">
+						<a href="#" data-type="all" class="catalog__tab-link">Все</a>
+					</li>
+					<li class="catalog__tab-item">
+						<a href="#" data-type="marketing" class="catalog__tab-link">Маркетинг</a>
+					</li>
+					<li class="catalog__tab-item">
+						<a href="#" data-type="science" class="catalog__tab-link">Научпоп</a>
+					</li>
+					<li class="catalog__tab-item">
+						<a href="#" data-type="business" class="catalog__tab-link">Бизнес</a>
+					</li>
+					<li class="catalog__tab-item">
+						<a href="#" data-type="creativity" class="catalog__tab-link">Творчество</a>
+					</li>
+				</ul>
 			</div>
+
 			<div class="catalog__list-wrap">
 				<div class="catalog__list">
 					<!-- <article class="product-card-mini">
@@ -75,15 +86,30 @@
 					</article> -->
 				</div>
 			</div>
+
 			<div class="paginator">
 				<ul class="paginator__list">
-					<li class="paginator__item"><a href="" class="paginator__link  paginator__link--active">1</a></li>
-					<li class="paginator__item"><a href="" class="paginator__link">2</a></li>
-					<li class="paginator__item"><a href="" class="paginator__link">3</a></li>
-					<li class="paginator__item"><a href="" class="paginator__link">4</a></li>
-					<li class="paginator__item"><a href="" class="paginator__link">5</a></li>
-					<li class="paginator__item"><a href="" class="paginator__link  paginator__link--more">...</a></li>
-					<li class="paginator__item"><a href="" class="paginator__link">10</a></li>
+					<li class="paginator__item">
+						<a href="" class="paginator__link  paginator__link--active">1</a>
+					</li>
+					<li class="paginator__item">
+						<a href="" class="paginator__link">2</a>
+					</li>
+					<li class="paginator__item">
+						<a href="" class="paginator__link">3</a>
+					</li>
+					<li class="paginator__item">
+						<a href="" class="paginator__link">4</a>
+					</li>
+					<li class="paginator__item">
+						<a href="" class="paginator__link">5</a>
+					</li>
+					<li class="paginator__item">
+						<a href="" class="paginator__link  paginator__link--more">...</a>
+					</li>
+					<li class="paginator__item">
+						<a href="" class="paginator__link">10</a>
+					</li>
 				</ul>
 			</div>
 		</section>
@@ -91,32 +117,38 @@
 			<div class="delivery__container">
 				<h2 class="delivery__title">Доставим в любое место</h2>
 				<p class="delivery__comment">// ну почти в любое</p>
+
 				<div class="delivery__row">
-					<div class="delivery__advantage-card">
-						<div class="delivery-card__img"><img src="" alt=""></div>
+					<div class="delivery__card  advantage-card">
+						<div class="delivery-card__img">
+							<img src="" alt="">
+							<!-- svg>use -->
+							<!-- svg(width, height) -->
+						</div>
 						<p class="delivery-card__descr">Покупайте книги на сайте в любимом формате - бумажные, электронные или аудио</p>
 					</div>
-					<div class="delivery__advantage-card">
+					<div class="delivery__card  advantage-card">
 						<div class="advantage-card__img"><img src="" alt=""></div>
 						<p class="advantage-card__descr">Мы подарим вам "Набор читателя" и добавим посылку.</p>
 					</div>
-					<div class="delivery__advantage-card">
+					<div class="delivery__card  advantage-card">
 						<div class="advantage-card__img"><img src="" alt=""></div>
 						<p class="advantage-card__descr">Бесплатно доставляем заказы от 3 000 по всей России.</p>
 					</div>
-					<div class="delivery__advantage-card">
+					<div class="delivery__card  advantage-card">
 						<div class="advantage-card__img"><img src="" alt=""></div>
 						<p class="advantage-card__descr">Доставка более чем 300 городов России, по Мооскве и Санкт-Петербургу - бесплатно.</p>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<section class="new-books">
 			<div class="new-books__container">
 				<h2 class="new-books__title">Наши новинки</h2>
 				<a href="" class="new-books__link">Все новинки</a>
 				<div class="new-books__row">
-					<article class="new-books__new-card">
+					<!-- <article class="new-books__new-card">
 						<a href="">
 							<h3 class="new-card__title">Латеральная логика</h3>
 						</a>
@@ -124,6 +156,52 @@
 							<img src="" alt="" class="product-card-mini__img">
 						</a>
 						<p class="new-card__descr">Головоломный путь к нестандартному мышлению</p>
+					</article> -->
+					<article class="product-card-mini">
+						<a href="">
+							<h3 class="product-card-mini__title">Латеральная логика</h3>
+						</a>
+						<a href="" class="product-card-mini__img-wrap">
+							<img src="./img/books/book-lateralnaya-logika.jpg" alt="" class="product-card-mini__img">
+						</a>
+						<p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
+						<button class="btn product-card-mini__btn">
+							<i></i>
+							push me
+						</button>
+						<button class="btn product-card-mini__btn">
+							detail
+						</button>
+						<style>
+							.product-card-mini__btn {
+								margin-right: 20px;
+							}
+							.btn {
+								display: inline-flex;
+								padding: 0;
+								margin: 0;
+								box-shadow: none;
+								outline: 0;
+								background-color: orange;
+								box-shadow: 1px 1px 1px #000;
+								padding: 0 30px;
+								height: 40px;
+								line-height: 40px;
+								text-decoration: none;
+							}
+
+							.btn i {
+								width: 20px;
+								height: 20px;
+								margin-right: 20px;
+							}
+
+							.btn:hover,
+							.btn:active {
+								background-color: red;
+								text-decoration: none;
+							}
+						</style>
 					</article>
 				</div>
 			</div>
@@ -131,13 +209,21 @@
 	</main>
 	<footer class="page-footer">
 		<div class="page-footer__container">
-			<a href="/" class="logo"><img src="" alt="book store"></a>
-			<div class="work-time"> с 9:00 до 19:00</div>
+			<a href="/" class="logo">
+				<img src="" alt="book store">
+			</a>
+			<div class="work-time">с 9:00 до 19:00</div>
 			<nav class="footer-nav">
 				<ul class="footer-nav__list">
-					<li class="footer-nav__item"><a href="./books.html" class="footer-nav__link">Книги</a></li>
-					<li class="footer-nav__item"><a href="./recomendations.html" class="footer-nav__link">Рекомендации</a></li>
-					<li class="footer-nav__item"><a href="./contacts.html" class="footer-nav__link">Контакты</a></li>
+					<li class="footer-nav__item">
+						<a href="./books.html" class="footer-nav__link">Книги</a>
+					</li>
+					<li class="footer-nav__item">
+						<a href="./recomendations.html" class="footer-nav__link">Рекомендации</a>
+					</li>
+					<li class="footer-nav__item">
+						<a href="./contacts.html" class="footer-nav__link">Контакты</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
