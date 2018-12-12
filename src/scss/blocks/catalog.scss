@@ -1,4 +1,16 @@
-.product-card-mini__img {
-	width: 260px;
-	height: 370px;
+.catalog {
+	background-color: $gray-lightest;
+
+	&__title {
+		display: none;
+	}
+
+	&__tabs-wrap {
+		background-color: $gray-lighter;
+	}
+
+	&__tabs {
+		display: flex;
+		justify-content: space-between;
+	}
 }
