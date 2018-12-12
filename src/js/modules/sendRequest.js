@@ -1,3 +1,4 @@
+
 function sendRequest(data, onSuccess){
 		let xhr = new XMLHttpRequest;
 
