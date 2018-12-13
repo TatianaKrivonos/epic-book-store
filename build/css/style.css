@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+  font-family: -apple-system, Montserrat, Roboto, Helvetica Neue, sans-serif;
   font-size: 16px; }
 
 a {
@@ -36,7 +37,7 @@ h3 {
   margin: 0; }
 
 .page {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif; }
+  font-family: -apple-system, Montserrat, Roboto, Helvetica Neue, sans-serif; }
 
 .logo {
   display: -webkit-inline-box;
@@ -90,14 +91,18 @@ h3 {
   .catalog__title {
     display: none; }
   .catalog__tabs-wrap {
+    padding: 30px 30px 10px 30px;
     background-color: #e8e8e8; }
   .catalog__tabs {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    display: flex; }
+  .catalog__tab-item {
+    margin-right: 30px; }
+    .catalog__tab-item a:hover {
+      padding-bottom: 20px;
+      color: #1a1ff7;
+      border-bottom: 3px solid #ef529f; }
 
 .product-card-mini__img {
   width: 260px;

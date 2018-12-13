@@ -6,11 +6,22 @@
 	}
 
 	&__tabs-wrap {
+		padding: 30px 30px 10px 30px;
 		background-color: $gray-lighter;
+	}	
+	
+	&__tabs {
+	display: flex;
 	}
 
-	&__tabs {
-		display: flex;
-		justify-content: space-between;
-	}
+	&__tab-item {
+		margin-right: 30px;
+
+		a:hover {
+			padding-bottom: 20px;
+			color: #1a1ff7;
+			border-bottom: 3px solid #ef529f;
+		}
+	}	
 }
+
