@@ -206,6 +206,19 @@ p {
 
 .delivery {
   background-color: #f5f5f5; }
+  .delivery__title {
+    font-weight: bold; }
+  .delivery__comment {
+    color: #333333; }
+
+.advantage-card__descr {
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .delivery__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .new-books {
   background-color: #f5f5f5; }

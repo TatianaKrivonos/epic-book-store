@@ -1,3 +1,26 @@
 .delivery {
 	background-color: $gray-lightest;
+
+		&__title {
+			font-weight: bold;
+		}
+
+		&__comment {
+			color: $gray-darker;
+		}
+}
+
+.advantage-card {
+	&__descr {
+		text-align: center;
+	}
+}
+
+
+@media (min-width: $screen-md) {
+	.delivery {
+		&__row {
+			display: flex;
+		}
+	}
 }
