@@ -120,7 +120,15 @@ p {
       color: #1a1ff7;
       border-bottom: 3px solid #ef529f; }
 
-.product-card-mini__img {
+@media (min-width: 768px) {
+  .catalog__tabs-wrap {
+    padding-left: 90px; } }
+
+@media (min-width: 1280px) {
+  .catalog__tabs-wrap {
+    padding-left: 160px; } }
+
+.product-card__img {
   width: 260px;
   height: 370px; }
 

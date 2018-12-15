@@ -4,7 +4,7 @@
 	&__title {
 		display: none;
 	}
-	
+
 	&__tabs-wrap {
 		padding: 30px 30px 10px 30px;
 		background-color: $gray-lighter;
@@ -23,5 +23,23 @@
 			border-bottom: 3px solid #ef529f;
 		}
 	}	
+}
+
+@media (min-width: $screen-md) {
+
+	.catalog {
+		&__tabs-wrap {
+			padding-left: 90px;
+		}	
+	}
+}
+
+@media (min-width: $screen-lg) {
+
+	.catalog {
+		&__tabs-wrap {
+			padding-left: 160px;
+		}	
+	}
 }
 
