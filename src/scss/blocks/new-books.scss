@@ -1,5 +1,19 @@
 .new-books {
-	background-color: $gray-lightest;
 
+	background: linear-gradient(to bottom, $gray-lightest 40%, #f4d4e4 40%);
+	
+	
+		&__title {
+			font-size: $first-title-size;
+		}
+
+		&__link {
+			color: #1a1ff7;
+		}
+
+		&__row {
+			display: flex;
+			z-index: 1;
+		}
 	
 }
