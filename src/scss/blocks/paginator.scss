@@ -1,0 +1,26 @@
+.paginator {
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 220px;
+	}
+
+	&__item {
+		font-weight: bold;
+
+			a:hover {
+				padding: 10px 15px;
+				color: #f075b1;
+				background-color: #f4d4e4;
+				border-radius: 50%;
+			}
+	}
+
+	&__item:last-child {
+		a:hover {
+			padding: 10px 10px;
+		}
+	}
+}
