@@ -20,8 +20,6 @@ a {
     text-decoration: none; }
 
 img {
-  -o-object-fit: cover;
-     object-fit: cover;
   min-height: 1px; }
 
 ul {
