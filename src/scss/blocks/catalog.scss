@@ -22,6 +22,10 @@
 			color: #1a1ff7;
 			border-bottom: 3px solid #ef529f;
 		}
+	}
+
+	&__list-wrap {
+		padding: 40px 50px 0px 50px;
 	}	
 }
 
@@ -31,6 +35,15 @@
 		&__tabs-wrap {
 			padding-left: 90px;
 		}	
+
+		&__list-wrap {
+			padding: 40px 100px 0px 100px;
+		}
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+		}
 	}
 }
 
@@ -40,6 +53,10 @@
 		&__tabs-wrap {
 			padding-left: 160px;
 		}	
+	}
+
+	&__list-wrap {
+		padding: 55px 60px 0px 60px;
 	}
 }
 
