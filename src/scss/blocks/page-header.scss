@@ -4,6 +4,7 @@
 
 .work-time {
 	display: none;
+	color: $gray-light;
 }
 
 .main-nav__list {
@@ -48,7 +49,6 @@
 	.work-time {
 		display: block;
 		padding-left: 30px;
-		color: $gray-light;
 		flex-grow: 2;
 	}	
 	.main-nav {

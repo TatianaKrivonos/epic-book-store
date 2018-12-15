@@ -1,3 +1,51 @@
 .page-footer {
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__work-time {
+		display: block;
+		order: 1;
+	}
+}
+
+.footer-nav {
+
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+
+		&__item {
+			font-weight: bold;
+				&--recom,
+				&--books {
+					display: none;
+			}
+		}
+}
+
+
+@media (min-width: $screen-md) {
 	
+	.page-footer {
+		&__work-time {
+			order: 0;
+		}
+	}
+
+	.footer-nav {
+
+		&__list {
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+			
+		}
+
+		&__item {
+			display: block;
+			padding: 0 10px 0 10px;
+		}
+	}
 }
