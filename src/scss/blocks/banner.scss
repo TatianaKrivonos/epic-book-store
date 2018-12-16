@@ -1,0 +1,14 @@
+.banner {
+	padding: 130px 0 120px 0;
+	background-image: linear-gradient(rgba(220, 117, 172, 0.7), rgba(220, 117, 172, 0.7)), url('../../img/banner.png');
+
+		p {
+			color: #fff;
+			text-align: center;
+
+				&:first-child {
+					font-weight: bold;
+					font-size: 36px;
+				}
+		}
+}

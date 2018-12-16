@@ -294,4 +294,15 @@ p {
     display: block;
     padding: 0 10px 0 10px; } }
 
+.banner {
+  padding: 130px 0 120px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 117, 172, 0.7)), to(rgba(220, 117, 172, 0.7))), url("../../img/banner.png");
+  background-image: linear-gradient(rgba(220, 117, 172, 0.7), rgba(220, 117, 172, 0.7)), url("../../img/banner.png"); }
+  .banner p {
+    color: #fff;
+    text-align: center; }
+    .banner p:first-child {
+      font-weight: bold;
+      font-size: 36px; }
+
 /*# sourceMappingURL=style.css.map */
