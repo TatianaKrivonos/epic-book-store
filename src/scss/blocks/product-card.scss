@@ -25,10 +25,26 @@
 		&__descr {
 			margin-bottom: 20px;
 			width: 260px;
+			font-style: italic;
 		}
 
 		&__price {
+			position: relative;
+			display: flex;
 			margin-bottom: 50px;
+			font-weight: bold;
+
+			&:after {
+				position: absolute;
+				left: 40px;
+				display: block;
+				content: "";
+				width: 15px;
+				height: 15px;
+				background-image: url('../../img/ruble.svg');
+				background-repeat: no-repeat;
+				background-position: 0 2px;
+			}
 		}
 }
 
