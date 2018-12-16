@@ -11,8 +11,8 @@
 <body>
 	<header class="page-header">
 		<div class="page-header__container">
-			<a href="/" class="logo">
-				<img src="" alt="book store" width="130px" height="20px">
+			<a href="#" class="logo">
+				<img src="img/logo.png" alt="book store" width="130px" height="20px">
 			</a>
 			<div class="work-time">с 9:00 до 19:00</div>
 			<nav class="main-nav">
@@ -27,10 +27,16 @@
 						<a href="./contacts.html" class="main-nav__link">Контакты</a>
 					</li>
 				</ul>
-				<button class="main-nav__toggle"></button>
+				<a href="" class="main-nav__icon main-nav__icon--basket">
+					<img src="img/shopping-cart.svg" alt="basket" width="20px" height="20px">
+				</a>
+				<a href="tel:+78005008020" class="main-nav__icon main-nav__icon--tel">
+					<img src="img/phone-receiver.svg" alt="tel" width="20px" height="20px">
+				</a>
+				<button class="main-nav__icon main-nav__icon--toggle"></button>
 			</nav>
 		</div>
-	</header>
+		</header>
 	<main>
 		<section class="recomendations">
 			<h1 class="recomendations__title">Наши рекомендации</h1>
@@ -41,17 +47,25 @@
 			<p>Приходите к нам по адресу Никитинская 10, каждый день с 12:00 до 18:00</p>
 		</div>
 	</main>
-	<footer class="recomendations-footer">
-		<div class="recomendations-footer__container">
-			<a href="/" class="logo"><img src="" alt="book store"></a>
-			<div class="work-time"> с 9:00 до 19:00</div>
-			<nav class="footer-nav">
-				<ul class="recomendations-footer__list">
-					<li class="recomendations-footer__item"><a href="./books.html" class="recomendations-footer__link">Книги</a></li>
-					<li class="recomendations-footer__item"><a href="./recomendations.html" class="recomendations-footer__link">Рекомендации</a></li>
-					<li class="recomendations-footer__item"><a href="./contacts.html" class="recomendations-footer__link">Контакты</a></li>
+	<footer class="page-footer">
+		<div class="page-footer__container">
+			<a href="#" class="logo page-footer__logo">
+				<img src="img/logo.png" alt="book store" width="130px" height="20px">
+			</a>
+			<div class="work-time page-footer__work-time">с 9:00 до 19:00</div>
+			<div class="footer-nav">
+				<ul class="footer-nav__list">
+					<li class="footer-nav__item footer-nav__item--books">
+						<a href="./books.html" class="footer-nav__link">Книги</a>
+					</li>
+					<li class="footer-nav__item footer-nav__item--recom">
+						<a href="./recomendations.html" class="footer-nav__link">Рекомендации</a>
+					</li>
+					<li class="footer-nav__item footer-nav__item--contacts">
+						<a href="./contacts.html" class="footer-nav__link">Контакты</a>
+					</li>
 				</ul>
-			</nav>
+			</div>
 		</div>
 	</footer>
   <script type="module" src ="js/scriptTest.js"></script>
