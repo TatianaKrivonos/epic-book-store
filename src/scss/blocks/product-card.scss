@@ -1,55 +1,57 @@
 .product-card {
-	
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-		a {
-			display: inline-block;
-			&:nth-child(2) {
-				order: -1;
-			}
+	a {
+		display: inline-block;
+
+		&:nth-child(2) {
+			order: -1;
 		}
+	}
 
-		&__title {
-			width: 260px;
-			margin-bottom: 30px;
-			font-weight: bold;
+	&__title {
+		width: 260px;
+		margin-bottom: 30px;
+		font-weight: 700;
+	}
+
+	&__img {
+		margin-bottom: 40px;
+		width: 220px;
+		height: 315px;
+	}
+
+	&__descr {
+		margin-bottom: 20px;
+		width: 260px;
+		font-style: italic;
+	}
+
+	&__price {
+		position: relative;
+		display: flex;
+		margin-bottom: 50px;
+		font-weight: 700;
+
+		&:after {
+			position: absolute;
+			left: 40px;
+			display: block;
+			content: '';
+			width: 15px;
+			height: 15px;
+			background-image: url('../../img/ruble.svg');
+			background-repeat: no-repeat;
+			background-position: 0 2px;
 		}
-
-		&__img {
-			margin-bottom: 40px;
-			width: 220px;
-			height: 315px;
-		}
-
-		&__descr {
-			margin-bottom: 20px;
-			width: 260px;
-			font-style: italic;
-		}
-
-		&__price {
-			position: relative;
-			display: flex;
-			margin-bottom: 50px;
-			font-weight: bold;
-
-			&:after {
-				position: absolute;
-				left: 40px;
-				display: block;
-				content: "";
-				width: 15px;
-				height: 15px;
-				background-image: url('../../img/ruble.svg');
-				background-repeat: no-repeat;
-				background-position: 0 2px;
-			}
-		}
+	}
 }
 
 @media (min-width: $screen-md) {
+
 	.product-card {
+
 		&:nth-child(2n+1) {
 			margin-right: 30px;
 		}
@@ -58,20 +60,21 @@
 			width: 260px;
 			height: 370px;
 		}
-	}	
+	}
 }
 
 @media (min-width: $screen-lg) {
+
 	.product-card {
 		margin-right: 40px;
 
-			&:nth-child(4){
-				margin-right: 0;
-			}
-			
-			&:nth-child(8){
-				margin-right: 0;
-			}
-	}
+		&:nth-child(4) {
+			margin-right: 0;
+		}
+
+		&:nth-child(8) {
+			margin-right: 0;
+		}
+  }
 }
 

@@ -5,6 +5,7 @@
   "scripts": {
     "start": "gulp",
     "test": "stylelint \"src/scss/**/*.scss\" --syntax=scss",
+    "format": "stylefmt -r src/scss/**/*.scss",
     "lint-staged": "lint-staged",
     "precommit": "lint-staged"
   },
@@ -37,6 +38,7 @@
     "husky": "^1.2.1",
     "lint-staged": "^8.1.0",
     "path": "^0.12.7",
+    "stylefmt": "^6.0.3",
     "stylelint": "^9.9.0",
     "webpack": "^4.27.1",
     "webpack-stream": "^5.2.1"

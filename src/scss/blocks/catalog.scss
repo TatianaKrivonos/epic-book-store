@@ -1,20 +1,20 @@
 .catalog {
-	background-color: $gray-lightest;
+  background-color: $gray-lightest;
 
-	&__title {
-		display: none;
+  &__title {
+	  display: none;
 	}
 
-	&__tabs-wrap {
+  &__tabs-wrap {
 		padding: 30px 30px 10px 30px;
 		background-color: $gray-lighter;
-	}	
-	
-	&__tabs {
+	}
+
+  &__tabs {
 	display: flex;
 	}
 
-	&__tab-item {
+  &__tab-item {
 		margin-right: 30px;
 
 		a:hover {
@@ -24,23 +24,24 @@
 		}
 	}
 
-	&__list-wrap {
-		padding: 40px 50px 0px 50px;
-	}	
+  &__list-wrap {
+		padding: 40px 50px 0 50px;
+	}
 }
 
 @media (min-width: $screen-md) {
 
 	.catalog {
-		&__tabs-wrap {
-			padding-left: 90px;
-		}	
 
-		&__list-wrap {
-			padding: 40px 100px 0px 100px;
+	  &__tabs-wrap {
+			padding-left: 90px;
 		}
 
-		&__list {
+		&__list-wrap {
+			padding: 40px 100px 0 100px;
+		}
+
+	  &__list {
 			display: flex;
 			flex-wrap: wrap;
 		}
@@ -50,13 +51,14 @@
 @media (min-width: $screen-lg) {
 
 	.catalog {
+
 		&__tabs-wrap {
 			padding-left: 160px;
-		}	
-	}
+		}
 
-	&__list-wrap {
-		padding: 55px 60px 0px 60px;
+		&__list-wrap {
+			padding: 55px 60px 0 60px;
+		}
 	}
 }
 

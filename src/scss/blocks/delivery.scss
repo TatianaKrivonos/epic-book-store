@@ -2,7 +2,7 @@
 	background-color: $gray-lightest;
 
 		&__title {
-			font-weight: bold;
+			font-weight: 700;
 		}
 
 		&__comment {
@@ -11,6 +11,7 @@
 }
 
 .advantage-card {
+
 	&__descr {
 		text-align: center;
 	}
@@ -18,7 +19,9 @@
 
 
 @media (min-width: $screen-md) {
+
 	.delivery {
+
 		&__row {
 			display: flex;
 		}

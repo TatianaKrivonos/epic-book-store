@@ -1,8 +1,7 @@
 .new-books {
 
-	background: linear-gradient(to bottom, $gray-lightest 40%, #f4d4e4 40%);
-	
-	
+  background: linear-gradient(to bottom, $gray-lightest 40%, #f4d4e4 40%);
+
 		&__title {
 			font-size: $first-title-size;
 		}
@@ -15,5 +14,4 @@
 			display: flex;
 			z-index: 1;
 		}
-	
 }
