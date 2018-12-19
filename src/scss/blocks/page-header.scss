@@ -13,12 +13,14 @@
 
 .page-header {
   padding: 20px 0 20px 0;
+  font-size: 14px;
 
   &__container {
     display: flex;
     margin: 0 auto;
-    padding: 0 30px 0 30px;
+    width: 87.466%;
     justify-content: space-between;
+    align-items: baseline;
   }
 }
 
@@ -44,12 +46,13 @@
 
     &__container {
       justify-content: flex-start;
+      width: 93.318%;
     }
   }
 
   .work-time {
     display: block;
-    padding-left: 30px;
+    padding-left: 33px;
     flex-grow: 2;
   }
 
@@ -58,11 +61,11 @@
 
     &__list {
       display: flex;
-      margin-right: 80px;
+      margin-right: 20px;
     }
 
     &__link {
-      padding: 0 10px 0 10px;
+      padding-right: 20px;
     }
 
     &__icon--toggle {
@@ -71,6 +74,23 @@
 
     &__icon--tel {
       display: block;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+
+  .page-header {
+
+    &__container {
+      width: 91.845%;
+    }
+  }
+
+  .main-nav {
+
+    &__list {
+      margin-right: 60px;
     }
   }
 }
