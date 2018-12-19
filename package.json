@@ -38,13 +38,13 @@
     "husky": "^1.2.1",
     "lint-staged": "^8.1.0",
     "path": "^0.12.7",
-    "stylefmt": "^6.0.3",
     "stylelint": "^9.9.0",
     "webpack": "^4.27.1",
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "picturefill": "^3.0.3"
+    "picturefill": "^3.0.3",
+    "stylefmt": "^6.0.3"
   }
 }
