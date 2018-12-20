@@ -1,13 +1,22 @@
 .page-footer {
 
+	.logo {
+		margin-bottom: 15px;
+	}
+
 	&__container {
 		display: flex;
 		flex-wrap: wrap;
+		margin: 0 auto;
+		padding: 20px 0 20px 0;
+		width: 87.466%;
+		align-items: baseline;
 	}
 
 	&__work-time {
 		display: block;
 		order: 1;
+		min-width: 100%;
 	}
 }
 
@@ -16,14 +25,14 @@
   flex-grow: 1;
   justify-content: flex-end;
 
-		&__item {
-			font-weight: 700;
+	&__item {
+		font-weight: 700;
 
-				&--recom,
-				&--books {
-					display: none;
-			}
+		&--recom,
+		&--books {
+			display: none;
 		}
+	}
 }
 
 
@@ -31,8 +40,17 @@
 
 	.page-footer {
 
+		&__container {
+			width: 93.318%;
+		}
+
 		&__work-time {
 			order: 0;
+			min-width: auto;
+		}
+
+		.logo {
+		margin-bottom: 0;
 		}
 	}
 
@@ -49,4 +67,14 @@
 			padding: 0 10px 0 10px;
 		}
 	}
+}
+
+@media (min-width: $screen-lg) {
+
+  .page-footer {
+
+	    &__container {
+	      width: 91.845%;
+	    }
+  	}
 }
