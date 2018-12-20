@@ -6,7 +6,7 @@
 	}
 
   &__tabs-wrap {
-		padding: 30px 30px 10px 30px;
+		padding-top: 30px;
 		background-color: $gray-lighter;
 	}
 
@@ -25,7 +25,9 @@
 	}
 
   &__list-wrap {
-		padding: 40px 50px 0 50px;
+		padding-top: 40px;
+		margin: 0 auto;
+		width: 87.466%;
 	}
 }
 
@@ -33,15 +35,16 @@
 
 	.catalog {
 
-	  &__tabs-wrap {
+		&__tabs-wrap {
 			padding-left: 90px;
 		}
 
 		&__list-wrap {
-			padding: 40px 100px 0 100px;
+			padding-top: 50px;
+			width: 93.318%;
 		}
 
-	  &__list {
+		&__list {
 			display: flex;
 			flex-wrap: wrap;
 		}
@@ -57,7 +60,7 @@
 		}
 
 		&__list-wrap {
-			padding: 55px 60px 0 60px;
+			width: 91.845%;
 		}
 	}
 }

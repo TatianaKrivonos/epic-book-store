@@ -1,6 +1,7 @@
 .product-card {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
 
 	a {
 		display: inline-block;
@@ -51,9 +52,10 @@
 @media (min-width: $screen-md) {
 
 	.product-card {
+		padding-left: 75px;
 
 		&:nth-child(2n+1) {
-			margin-right: 30px;
+			margin-right: 15px;
 		}
 
 		&__img {
@@ -66,15 +68,16 @@
 @media (min-width: $screen-lg) {
 
 	.product-card {
-		margin-right: 40px;
+		padding-left: 0;
+		margin-right: 3.449%;
 
-		&:nth-child(4) {
-			margin-right: 0;
+		&:nth-child(2n+1) {
+			margin-right: 3.449%;
 		}
 
-		&:nth-child(8) {
+		&:nth-child(4n+4) {
 			margin-right: 0;
 		}
-  }
+	}
 }
 
