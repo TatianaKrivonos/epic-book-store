@@ -8,6 +8,8 @@
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody()</script>
 </head>
 <body>
 	<header class="page-header">
@@ -123,10 +125,9 @@
 
 				<div class="delivery__row">
 					<div class="delivery__card  advantage-card">
-						<div class="advantage-card__img">
-							<!-- svg>use -->
-							<!-- svg(width, height) -->
-						</div>
+						<svg width="55" height="45" class="advantage-card__img">
+              <use xlink:href="img/sprite.svg#icon_book"></use>
+            </svg>
 						<p class="advantage-card__descr">Покупайте книги на сайте в любимом формате - бумажные, электронные или аудио</p>
 					</div>
 					<div class="delivery__card  advantage-card">
@@ -164,7 +165,7 @@
 							<img src="./img/books/book-lateralnaya-logika.jpg" alt="" class="product-card__img" width="260px" height="370px">
 						</a>
 						<p class="product-card__descr">Головоломный путь к нестандартному мышлению</p>
-					</article>	
+					</article>
 					<article class="product-card">
 						<a href="">
 							<h3 class="product-card__title">Путеводитель по лжи</h3>
@@ -173,7 +174,7 @@
 							<img src="./img/books/book-putevoditel-po-lzhi.jpg" alt="" class="product-card__img" width="260px" height="370px">
 						</a>
 						<p class="product-card__descr">Критическое мышлени в эпоху постправды</p>
-					</article>	
+					</article>
 					<article class="product-card">
 						<a href="">
 							<h3 class="product-card__title">Дао физики</h3>
@@ -182,7 +183,7 @@
 							<img src="./img/books/book-dao-fiziki.jpg" alt="" class="product-card__img" width="260px" height="370px">
 						</a>
 						<p class="product-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
-					</article>	
+					</article>
 					<article class="product-card">
 						<a href="">
 							<h3 class="product-card__title">Не очевидно</h3>
@@ -191,7 +192,7 @@
 							<img src="./img/books/book-ne-ochevidno.jpg" alt="" class="product-card__img" width="260px" height="370px">
 						</a>
 						<p class="product-card__descr">Как выявлять тренды раньше других</p>
-					</article>	
+					</article>
 
 
 
