@@ -1,0 +1,56 @@
+
+.main-nav {
+
+  @media (min-width: $screen-md) {
+    display: flex;
+  }
+
+  &__list {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      margin-right: 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-right: 60px;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    text-transform: lowercase;
+
+    @media (min-width: $screen-md) {
+      padding-right: 20px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__icon--tel {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+  }
+
+  &__icon--basket {
+
+    @media (min-width: $screen-md) {
+      display: block;
+      margin-right: 20px;
+    }
+  }
+
+  &__icon--toggle {
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+}
