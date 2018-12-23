@@ -1,29 +1,74 @@
 .delivery {
-	background-color: $gray-lightest;
+  padding-top: 60px;
+  background-color: $gray-lightest;
 
-		&__title {
-			font-weight: 700;
-		}
+    &__container {
+      margin: 0 auto;
+      width: 87.466%;
+    }
 
-		&__comment {
-			color: $gray-darker;
-		}
+    &__title {
+      margin-bottom: 35px;
+      font-weight: 700;
+    }
+
+    &__comment {
+      margin-bottom: 60px;
+      color: $gray-darker;
+    }
 }
 
 .advantage-card {
+  margin-bottom: 60px;
+  padding: 0 30px 0 30px;
+  width: 250px;
+  text-align: center;
 
-	&__descr {
-		text-align: center;
-	}
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__img {
+      margin-bottom: 40px;
+    }
 }
 
 
 @media (min-width: $screen-md) {
 
-	.delivery {
+  .delivery {
 
-		&__row {
-			display: flex;
-		}
-	}
+    &__container {
+      padding-left: 0;
+      width: 93.318%;
+    }
+
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .advantage-card {
+    padding: 0 0 0 10px;
+    margin-right: 110px;
+  }
+}
+
+@media (min-width: $screen-lg) {
+
+  .delivery {
+
+    &__container {
+      width: 1160px;
+    }
+  }
+
+  .advantage-card {
+    margin-right: 53px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

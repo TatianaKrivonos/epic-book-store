@@ -142,7 +142,7 @@ function serve() {
     javascript,
     browserSync.reload
   ));
-  watch(`${dir.src}svg-sprite/*.svg`).on('change', series(
+  watch(`${dir.src}svg-sprite/*.svg`).on('all', series(
     buildSvgSprite,
     browserSync.reload
   ));
