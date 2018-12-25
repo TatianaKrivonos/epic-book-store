@@ -1,80 +1,42 @@
 .page-footer {
 
-	.logo {
-		margin-bottom: 15px;
-	}
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    align-items: baseline;
 
-	&__container {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 auto;
-		padding: 20px 0 20px 0;
-		width: 87.466%;
-		align-items: baseline;
-	}
+    @media (min-width: $screen-md) {
+      padding: 20px 0 20px 0;
+      width: 760px;
+    }
 
-	&__work-time {
-		display: block;
-		order: 1;
-		min-width: 100%;
-	}
-}
+    @media (min-width: $screen-lg) {
+      padding: 20px 0 20px 0;
+      width: 1160px;
+    }
+  }
 
-.footer-nav {
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
+  &__logo {
+    margin-bottom: 15px;
 
-	&__item {
-		font-weight: 700;
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
 
-		&--recom,
-		&--books {
-			display: none;
-		}
-	}
-}
+  &__work-time {
+    display: block;
+    order: 1;
+    min-width: 100%;
+    color: $gray-light;
 
-
-@media (min-width: $screen-md) {
-
-	.page-footer {
-
-		&__container {
-			width: 93.318%;
-		}
-
-		&__work-time {
-			order: 0;
-			min-width: auto;
-		}
-
-		.logo {
-		margin-bottom: 0;
-		}
-	}
-
-	.footer-nav {
-
-		&__list {
-			display: flex;
-			justify-content: flex-end;
-			width: 100%;
-		}
-
-		&__item {
-			display: block;
-			padding: 0 10px 0 10px;
-		}
-	}
-}
-
-@media (min-width: $screen-lg) {
-
-  .page-footer {
-
-	    &__container {
-	      width: 91.845%;
-	    }
-  	}
+    @media (min-width: $screen-md) {
+      order: 0;
+      padding-left: 30px;
+      min-width: auto;
+    }
+  }
 }

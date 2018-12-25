@@ -1,0 +1,32 @@
+.footer-nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+
+  &__item {
+    font-weight: 700;
+
+    &--recom,
+    &--books {
+      display: none;
+    }
+
+    @media (min-width: $screen-md) {
+      display: block;
+      padding: 0 10px 0 10px;
+
+      &:last-child {
+        padding: 0 0 0 10px;
+      }
+    }
+  }
+
+  @media (min-width: $screen-md) {
+
+    &__list {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+  }
+}
