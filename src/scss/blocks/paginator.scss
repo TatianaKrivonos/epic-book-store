@@ -3,8 +3,20 @@
   &__list {
     display: flex;
     margin: 0 auto;
-    width: 87.466%;
+    padding: 0 20px 0 20px;
+    width: 100%;
     justify-content: center;
+
+    @media (min-width: $screen-md) {
+      padding: 0 0 0 75px;
+      width: 760px;
+      justify-content: flex-start;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 0;
+      width: 1160px;
+    }
   }
 
   &__item {
@@ -28,25 +40,4 @@
 	}
 }
 
-@media (min-width: $screen-md) {
 
-	.paginator {
-
-		&__list {
-			padding-left: 75px;
-			width: 93.318%;
-			justify-content: flex-start;
-		}
-	}
-}
-
-@media (min-width: $screen-lg) {
-
-	.paginator {
-
-		&__list {
-			padding-left: 0;
-			width: 91.845%;
-		}
-	}
-}
