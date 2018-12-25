@@ -1,74 +1,85 @@
 .delivery {
-  padding-top: 60px;
-  background-color: $gray-lightest;
+  position: relative;
+  padding-top: 50px;
+  margin: 0 10px;
+  border: 8px solid $gray-lighter;
 
-    &__container {
-      margin: 0 auto;
-      width: 87.466%;
+    @media (min-width: $screen-md) {
+      margin: 0 40px;
     }
 
-    &__title {
-      margin-bottom: 35px;
-      font-weight: 700;
+    @media (min-width: $screen-lg) {
+      margin: 0 30px;
     }
 
-    &__comment {
-      margin-bottom: 60px;
-      color: $gray-darker;
-    }
-}
-
-.advantage-card {
-  margin-bottom: 60px;
-  padding: 0 30px 0 30px;
-  width: 250px;
-  text-align: center;
-
-    &:last-child {
-      margin-bottom: 0;
+    &:after,
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 8px;
+      background-color: $gray-lightest;
     }
 
-    &__img {
-      margin-bottom: 40px;
+    &:before {
+      top: -8px;
+      left: 52px;
+      width: 150px;
+
+      @media (min-width: $screen-md) {
+        width: 170px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 400px;
+      }
     }
-}
 
+    &:after {
+      bottom: -8px;
+      right: 52px;
+      width: 110px;
 
-@media (min-width: $screen-md) {
+      @media (min-width: $screen-md) {
+        width: 280px;
+      }
 
-  .delivery {
-
-    &__container {
-      padding-left: 0;
-      width: 93.318%;
+      @media (min-width: $screen-lg) {
+        width: 740px;
+      }
     }
 
-    &__row {
-      display: flex;
-      flex-wrap: wrap;
+  &__container {
+    margin: 0 auto;
+    padding: 0 12px 0 12px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      padding: 0;
+      width: 760px;
     }
-  }
 
-  .advantage-card {
-    padding: 0 0 0 10px;
-    margin-right: 110px;
-  }
-}
-
-@media (min-width: $screen-lg) {
-
-  .delivery {
-
-    &__container {
+    @media (min-width: $screen-lg) {
+      padding: 0;
       width: 1160px;
     }
   }
 
-  .advantage-card {
-    margin-right: 53px;
+  &__title {
+    margin-bottom: 35px;
+    font-weight: 700;
+  }
 
-    &:last-child {
-      margin-right: 0;
+  &__comment {
+    margin-bottom: 60px;
+    color: $gray-darker;
+  }
+
+  @media (min-width: $screen-md) {
+
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 }
