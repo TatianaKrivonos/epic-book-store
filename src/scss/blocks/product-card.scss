@@ -1,83 +1,60 @@
 .product-card {
-	display: flex;
-	flex-direction: column;
-	padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
 
-	a {
-		display: inline-block;
+  a {
+    display: inline-block;
 
-		&:nth-child(2) {
-			order: -1;
-		}
-	}
+    &:nth-child(2) {
+      order: -1;
+    }
+  }
 
-	&__title {
-		width: 260px;
-		margin-bottom: 30px;
-		font-weight: 700;
-	}
+  &__title {
+    width: 220px;
+    margin-bottom: 30px;
+    font-weight: 700;
 
-	&__img {
-		margin-bottom: 40px;
-		width: 220px;
-		height: 315px;
-	}
+    @media (min-width: $screen-md) {
+      width: 260px;
+    }
+  }
 
-	&__descr {
-		margin-bottom: 20px;
-		width: 260px;
-		font-style: italic;
-	}
+  &__img {
+    margin-bottom: 40px;
+    width: 220px;
+    height: 315px;
 
-	&__price {
-		position: relative;
-		display: flex;
-		margin-bottom: 50px;
-		font-weight: 700;
+    @media (min-width: $screen-md) {
+      width: 260px;
+      height: 370px;
+    }
+  }
 
-		&:after {
-			position: absolute;
-			left: 40px;
-			display: block;
-			content: '';
-			width: 15px;
-			height: 15px;
-			background-image: url('../../img/ruble.svg');
-			background-repeat: no-repeat;
-			background-position: 0 2px;
-		}
-	}
-}
+  &__descr {
+    margin-bottom: 30px;
+    width: 260px;
+    font-style: italic;
+  }
 
-@media (min-width: $screen-md) {
+  &__price {
+    position: relative;
+    display: flex;
+    margin-top: auto;
+    font-weight: 700;
 
-	.product-card {
-		padding-left: 75px;
-
-		&:nth-child(2n+1) {
-			margin-right: 15px;
-		}
-
-		&__img {
-			width: 260px;
-			height: 370px;
-		}
-	}
-}
-
-@media (min-width: $screen-lg) {
-
-	.product-card {
-		padding-left: 0;
-		margin-right: 3.449%;
-
-		&:nth-child(2n+1) {
-			margin-right: 3.449%;
-		}
-
-		&:nth-child(4n+4) {
-			margin-right: 0;
-		}
-	}
+    &:after {
+      position: absolute;
+      left: 40px;
+      display: block;
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-image: url('../../img/ruble.svg');
+      background-repeat: no-repeat;
+      background-position: 0 2px;
+    }
+  }
 }
 
