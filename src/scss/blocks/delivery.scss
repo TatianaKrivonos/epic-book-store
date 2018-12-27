@@ -51,11 +51,12 @@
 
   &__container {
     margin: 0 auto;
-    padding: 0 12px 0 12px;
+    padding: 0 12px;
     width: 100%;
 
     @media (min-width: $screen-md) {
-      padding: 0;
+      padding-left: 27px;
+      padding-right: 0;
       width: 760px;
     }
 
@@ -75,11 +76,16 @@
     color: $gray-darker;
   }
 
-  @media (min-width: $screen-md) {
 
-    &__row {
+  &__row {
+
+    @media (min-width: $screen-md) {
       display: flex;
       flex-wrap: wrap;
+    }
+
+    @media (min-width: $screen-lg) {
+      justify-content: space-between;
     }
   }
 }

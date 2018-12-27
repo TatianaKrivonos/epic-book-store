@@ -30,8 +30,7 @@
 		color: #1a1ff7;
 
     @media (min-width: $screen-md) {
-      display: flex;
-      justify-content: flex-end;
+      float: right;
     }
 	}
 

@@ -1,23 +1,21 @@
 .advantage-card {
   margin-bottom: 60px;
-  padding: 0 30px 0 30px;
-  width: 250px;
+  width: 260px;
   text-align: center;
 
     &__img {
       margin-bottom: 40px;
     }
 
-  @media (min-width: $screen-md) {
-    padding: 0 0 0 10px;
-    margin-right: 110px;
-  }
+    @media (min-width: $screen-md) {
+      margin-right: 100px;
 
-  @media (min-width: $screen-lg) {
-    margin-right: 53px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
 
-      &:last-child {
+    @media (min-width: $screen-lg) {
       margin-right: 0;
     }
-  }
 }
