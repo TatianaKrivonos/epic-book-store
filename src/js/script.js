@@ -103,5 +103,5 @@ function sendRequest(data){
 };
 
 $(document).ready(function(){
-
+  $('.j-slider').slick()
 });
