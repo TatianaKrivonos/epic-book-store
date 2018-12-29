@@ -116,6 +116,16 @@ function javascript() {
 }
 exports.javascript = javascript;
 
+function jquery() {
+  return src([
+      './node_modules/jquery/dist/jquery.min.js',
+      './node_modules/slick-carousel/slick/slick.min.js',
+    ])
+    .pipe(plumber())
+    .pipe(dest(`${dir.build}js/`));
+}
+exports.jquery = jquery;
+
 function clean() {
   return del(dir.build)
 }
@@ -150,7 +160,7 @@ function serve() {
 
 exports.default = series(
   clean,
-  parallel(styles, copyHTML, copyImg, buildSvgSprite, copyFonts, copyVendorsJs, javascript),
+  parallel(styles, copyHTML, copyImg, buildSvgSprite, copyFonts, copyVendorsJs, javascript, jquery),
   serve
 );
 

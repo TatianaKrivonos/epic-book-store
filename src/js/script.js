@@ -102,8 +102,6 @@ function sendRequest(data){
   }
 };
 
+$(document).ready(function(){
 
-
-
-
-
+});
