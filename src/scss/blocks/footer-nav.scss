@@ -21,6 +21,13 @@
     }
   }
 
+  &__link {
+
+    &--active {
+      color: #d7569c;
+    }
+  }
+
   @media (min-width: $screen-md) {
 
     &__list {

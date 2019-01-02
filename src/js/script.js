@@ -103,5 +103,10 @@ function sendRequest(data){
 };
 
 $(document).ready(function(){
-  $('.j-slider').slick()
+  $('.j-slider').slick();
+
+  $(".catalog__tab-link").on("click", function(){
+    $(".catalog__tab-link").removeClass("active");
+    $(this).addClass("active");
+  });
 });

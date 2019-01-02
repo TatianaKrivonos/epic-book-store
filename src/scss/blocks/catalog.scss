@@ -24,13 +24,20 @@
 
   &__tab-item {
 		margin-right: 30px;
-
-		a:hover {
-			padding-bottom: 20px;
-			color: #1a1ff7;
-			border-bottom: 3px solid #ef529f;
-		}
 	}
+
+  &__tab-link {
+
+    &.active {
+      padding-bottom: 20px;
+      color: #1a1ff7;
+      border-bottom: 3px solid #ef529f;
+    }
+
+    &:hover {
+      color: #1a1ff7;
+    }
+  }
 
   &__list-wrap {
 		padding-top: 40px;

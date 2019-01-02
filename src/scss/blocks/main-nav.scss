@@ -23,6 +23,10 @@
     font-weight: 700;
     text-transform: lowercase;
 
+    &--active {
+      color: #d7569c;
+    }
+
     @media (min-width: $screen-md) {
       padding-right: 20px;
     }
