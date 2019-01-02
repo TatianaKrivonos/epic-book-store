@@ -1,14 +1,29 @@
 .banner {
-  padding: 130px 0 120px 0;
+  padding: 70px 0 120px 0;
   background-image: linear-gradient(rgba(220, 117, 172, 0.7), rgba(220, 117, 172, 0.7)), url('../../img/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 
-	  p {
-		  color: #fff;
-		  text-align: center;
+  p {
+	  color: #fff;
+	  text-align: center;
+    line-height: 30px;
 
-			  &:first-child {
-				  font-weight: 700;
-				  font-size: 36px;
-			  }
+	  &:first-child {
+      margin-bottom: 25px;
+		  font-weight: 700;
+		  font-size: 36px;
+
+      &:before {
+        display: block;
+        content: '';
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 100px;
+        height: 15px;
+        background-image: url('../../img/shape.svg');
+        background-repeat: no-repeat;
+      }
 	  }
+  }
 }

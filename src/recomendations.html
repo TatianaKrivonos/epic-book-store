@@ -12,10 +12,10 @@
   <header class="page-header">
     <div class="page-header__container">
       <a href="#" class="page-header__logo">
-        <img src="img/logo.png" alt="book store" width="130px" height="20px">
+        <img src="img/logo.png" alt="book store" width="130px" height="24px">
       </a>
       <div class="page-header__work-time">с 9:00 до 19:00</div>
-      <nav class="main-nav">
+      <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="./books.html" class="main-nav__link">Книги</a>
@@ -28,58 +28,61 @@
           </li>
         </ul>
         <a href="" class="main-nav__icon main-nav__icon--basket">
-          <img src="img/shopping-cart.svg" alt="basket" width="20px" height="20px">
+          <img src="img/icon1_bascket.svg" alt="basket" width="20px" height="20px">
         </a>
         <a href="tel:+78005008020" class="main-nav__icon main-nav__icon--tel">
-          <img src="img/phone-receiver.svg" alt="tel" width="20px" height="20px">
+          <img src="img/button_phone.svg" alt="tel" width="20px" height="20px">
         </a>
         <button class="main-nav__icon main-nav__icon--toggle"></button>
       </nav>
     </div>
-    </header>
+  </header>
   <main>
     <section class="recomendations">
-      <h1 class="recomendations__title">Наши рекомендации</h1>
-      <div class="recomendations__block block">
-        <h3 class="block__title">Новая статья в блоге</h3>
-        <p class="block__text">Посмотрите, как чтение кни меняет восприятие человека</p>
-        <a href="#" class="block__link">Читать статью</a>
-      </div>
-      <div class="recomendations__block">
-        <span>Книга осени!</span>
-        <span>Проголосуй за лучшую книгу этой осени</span>
-      </div>
-      <div class="recomendations__block">
-        <span>Наши подборки ваших лучших фотографий у нас</span>
-      </div>
-      <div class="recomendations__block">
-        <h3 class="block__title">Нам важно ваше мнение!</h3>
-        <p class="block__text">Ставьте пальцы вверх, мы хотим знать ваше мнение</p>
-        <button href="#" class="block__btn">Читать статью</button>
-      </div>
-      <div class="recomendations__block">
-        <h3 class="block__title">Книга для детей</h3>
-        <p class="block__text">У нас появился новый раздел, в котором подбираем книги для юных читателей</p>
-      </div>
-      <div class="recomendations__block">
-        <span>У вас есть старые книги!</span>
-        <span>Приносите их нам и обменять на новые</span>
-      </div>
-      <div class="recomendations__block">
-        <h3 class="block__title">Книга в подарок!</h3>
-        <p class="block__text">При вашем новом заказе мы подарим вам книгу</p>
-        <article class="product-card">
-          <a href="">
-            <h2 class="product-card__title">Путеводитель по лжи</h2>
-          </a>
-          <a href="" class="product-card__img-wrap">
-            <img src="./img/books/book-putevoditel-po-lzhi.jpg" alt="" class="product-card__img" width="260px" height="370px">
-          </a>
-          <p class="product-card__descr">Критическое мышлени в эпоху постправды</p>
-        </article>
+      <div class="recomendations__container">
+        <h1 class="recomendations__title">Наши рекомендации</h1>
+        <div class="recomendations__wrap">
+          <div class="recomendations__block recomendations__block--1">
+            <h3>Новая статья в блоге</h3>
+            <p>Посмотрите, как чтение кни меняет восприятие человека</p>
+            <a href="#">Читать статью</a>
+          </div>
+          <div class="recomendations__block recomendations__block--2">
+            <p>Книга осени!</p>
+            <p>Проголосуй за лучшую книгу этой осени</p>
+          </div>
+          <div class="recomendations__block recomendations__block--3">
+            <p>Наши подборки ваших лучших фотографий у нас</p>
+          </div>
+          <div class="recomendations__block recomendations__block--4">
+            <h3>Нам важно ваше мнение!</h3>
+            <p>Ставьте пальцы вверх, мы хотим знать ваше мнение</p>
+            <a href="#">Проголосовать</a>
+          </div>
+          <div class="recomendations__block recomendations__block--5">
+            <h3>Книга для детей</h3>
+            <p>У нас появился новый раздел, в котором подбираем книги для юных читателей</p>
+          </div>
+          <div class="recomendations__block recomendations__block--6">
+            <p>У вас есть старые книги?</p>
+            <p>Приносите их нам и обменяйте на новые</p>
+          </div>
+          <div class="recomendations__block recomendations__block--7">
+            <h3>Книга в подарок!</h3>
+            <p>При вашем новом заказе мы подарим вам книгу</p>
+            <article class="product-card">
+              <a href="">
+                <h2 class="product-card__title">Путеводитель по лжи</h2>
+              </a>
+              <a href="" class="product-card__img-wrap">
+                <img src="./img/books/book-putevoditel-po-lzhi.jpg" alt="" class="product-card__img" width="260px" height="370px">
+              </a>
+              <p class="product-card__descr">Критическое мышлени в эпоху постправды</p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
-
     <div class="banner">
       <p>Мы открыли для вас уютную библиотеку</p>
       <p>Приходите к нам по адресу Никитинская 10, каждый день с 12:00 до 18:00</p>
