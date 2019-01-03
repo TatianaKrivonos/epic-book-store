@@ -45,7 +45,7 @@
 <body>
 	<header class="page-header">
     <div class="page-header__container">
-      <a href="#" class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <img src="img/logo.png" alt="book store" width="130px" height="24px">
       </a>
       <div class="page-header__work-time">с 9:00 до 19:00</div>
@@ -86,16 +86,22 @@
 			<div class="contacts__map" id="map"></div>
 		</section>
 		<section class="feedback">
-			<h2 class="feedback__title">Есть вопросы?</h2>
-			<p class="feedback__text">Напишите к нам на почту. Ответим в течении дня</p>
-			<form action="#" name="contacts-form" method="post">
-				<div class="contacts-form__inputs">
-					<input type="text" placeholder="Ваша почта" name="email">
-					<input type="text" placeholder="Сообщение" name="message">
-					<input type="submit" value="Отправить">
-				</div>
-				<p><input type="checkbox" name="checkbox">Я согласен(-на) с <a href="">политикой конфиденциальности</a> и <a href="">правилами обработки данных</a></p>
-			</form>
+			<div class="feedback__container">
+        <h2 class="feedback__title">Есть вопросы?</h2>
+        <p class="feedback__text">Напишите к нам на почту. Отвечаем в течении дня</p>
+        <form action="#" name="feedback-form" method="post" class="feedback__form">
+          <div class="feedback__form-wrap">
+            <input type="text" placeholder="Ваша почта" name="email" class="feedback__input feedback__input--mail">
+            <input type="text" placeholder="Сообщение" name="message" class="feedback__input feedback__input--mess">
+            <label class="feedback__checbox">
+              <div class="feedback__checked"></div>
+              <input type="checkbox" name="checkbox">
+              <p>Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a></p>
+            </label>
+            <input type="submit" value="Отправить" class="feedback__btn">
+          </div>
+        </form>
+      </div>
 		</section>
 		<div class="banner">
 			<p>Мы открыли для вас уютную библиотеку</p>

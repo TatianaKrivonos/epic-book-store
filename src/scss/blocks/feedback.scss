@@ -1,0 +1,163 @@
+.feedback {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  margin: 0 10px 50px 10px;
+  border: 8px solid $gray-lighter;
+
+    @media (min-width: $screen-md) {
+      margin: 0 40px 50px 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0 30px 50px 30px;
+    }
+
+    &:after,
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 8px;
+      background-color: $gray-lightest;
+    }
+
+    &:before {
+      top: -8px;
+      left: 52px;
+      width: 150px;
+
+      @media (min-width: $screen-md) {
+        width: 170px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 400px;
+      }
+    }
+
+    &:after {
+      bottom: -8px;
+      right: 52px;
+      width: 110px;
+
+      @media (min-width: $screen-md) {
+        width: 280px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 740px;
+      }
+    }
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 12px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      width: 760px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 0;
+      width: 1160px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__form-wrap {
+
+     @media (min-width: $screen-lg) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      justify-content: space-between;
+     }
+  }
+
+  &__input {
+    margin-bottom: 45px;
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 4px solid #d0d0d0;
+
+    @media (min-width: $screen-md) {
+      width: 300px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0;
+      width: 360px;
+    }
+
+    &--mail {
+      margin: 45px 0;
+
+      @media (min-width: $screen-md) {
+        margin-right: 30px;
+     }
+
+     @media (min-width: $screen-lg) {
+        margin: 0;
+      }
+    }
+  }
+
+  &__checbox {
+    display: flex;
+
+    @media (min-width: $screen-md) {
+      width: 410px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 40px;
+      order: 3;
+    }
+
+    input {
+      display: none;
+    }
+
+    a {
+      color: #1a1ff7;
+    }
+  }
+
+  &__checked {
+    position: relative;
+    margin-right: 10px;
+    min-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    border: 4px solid #d0d0d0;
+  }
+
+  &__btn {
+    padding: 5px 0;
+    margin-top: 40px;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    border-color: transparent;
+    background-color: #000;
+
+    @media (min-width: $screen-md) {
+      width: 300px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 0;
+      height: 50px;
+      width: 360px;
+      order: 2;
+    }
+  }
+}
