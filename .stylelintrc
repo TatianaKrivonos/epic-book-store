@@ -100,9 +100,6 @@
     "declaration-bang-space-before": ["always", {
       "message": "Перед знаком восклицательным пробел оставить хочешь ты"
     }],
-    "declaration-colon-newline-after": ["always-multi-line", {
-      "message": "Для свойств множественных каждое — на строке своей быть должно"
-    }],
     "declaration-colon-space-after": ["always", {
       "message": "Правило задавая, один пробел после двоеточия ставь"
     }],

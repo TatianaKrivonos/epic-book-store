@@ -4,21 +4,23 @@
 	<meta charset="UTF-8">
 	<title>BOOK STORE</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <script>
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    </script>
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody()</script>
 </head>
 <body>
 	<header class="page-header">
     <div class="page-header__container">
-      <a href="./index.html" class="page-header__logo">
+      <a href="#" class="page-header__logo">
         <img src="img/logo.png" alt="book store" width="130px" height="24px">
       </a>
       <div class="page-header__work-time">с 9:00 до 19:00</div>
       <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="./books.html" class="main-nav__link">Книги</a>
+            <a href="./books.html" class="main-nav__link main-nav__link--active">Книги</a>
           </li>
           <li class="main-nav__item">
             <a href="./recomendations.html" class="main-nav__link">Рекомендации</a>
@@ -38,6 +40,55 @@
     </div>
   </header>
 	<main>
+    <section class="books">
+      <div class="books__container">
+        <div class="books__header">
+          <p>Эдди Юн</p>
+          <h1 class="books__title">Супер-потребители</h1>
+          <p>Кто это и почему они так важны для вашего бизнеса</p>
+        </div>
+        <div class="books__img">
+          <img src="img/books/superPotr.jpg" alt="Супер-потребители" width="300" height="425">
+        </div>
+        <div class="books__pages">
+          <div class="books__pages-img">
+            <img src="img/book-page.png" alt="page1" width="80" height="100">
+          </div>
+          <div class="books__pages-img">
+            <img src="img/book-page.png" alt="page2" width="80" height="100">
+          </div>
+          <div class="books__pages-img">
+            <img src="img/book-page.png" alt="page3" width="80" height="100">
+          </div>
+        </div>
+        <div class="books__info">
+          <div class="books__features">
+            <ul class="books__features-list">
+              <li>Арктикул</li>
+              <li>В наличии</li>
+              <li>Издательство</li>
+              <li>Цена</li>
+            </ul>
+            <ul class="books__features-descr">
+              <li>1090763</li>
+              <li>5 шт.</li>
+              <li>Издал</li>
+              <li>800</li>
+            </ul>
+          </div>
+          <label for="amount"><input type="text" name="amount" class="books__input" value="1"> шт.</label>
+          <input type="submit" value="Добавить в корзину" class="books__btn">
+          <div class="books__like"><span>20 людям понравилась эта книга</span></div>
+        </div>
+        <div class="books__descr">
+          <h2 class="books__descr-title">Короткое описание</h2>
+          <p class="books__descr-text">В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
+          <p class="books__descr-text">Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты c копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.</p>
+          <a href="#" class="books__descr-link">Показать полностью</a>
+          <div class="books__socials"></div>
+        </div>
+      </div>
+    </section>
 	  <section class="new-books">
       <div class="new-books__container">
         <h2 class="new-books__title">Книги по тематике</h2>
@@ -89,20 +140,20 @@
 	</main>
 	<footer class="page-footer">
     <div class="page-footer__container">
-      <a href="./index.html" class="page-footer__logo">
+      <a href="#" class="page-footer__logo">
         <img src="img/logo.png" alt="book store" width="130px" height="20px">
       </a>
       <div class="page-footer__work-time">с 9:00 до 19:00</div>
       <div class="footer-nav">
         <ul class="footer-nav__list">
           <li class="footer-nav__item footer-nav__item--books">
-            <a href="./books.html" class="footer-nav__link">Книги</a>
+            <a href="./books.html" class="footer-nav__link">книги</a>
           </li>
           <li class="footer-nav__item footer-nav__item--recom">
-            <a href="./recomendations.html" class="footer-nav__link">Рекомендации</a>
+            <a href="./recomendations.html" class="footer-nav__link">рекомендации</a>
           </li>
           <li class="footer-nav__item footer-nav__item--contacts">
-            <a href="./contacts.html" class="footer-nav__link">Контакты</a>
+            <a href="./contacts.html" class="footer-nav__link">контакты</a>
           </li>
         </ul>
       </div>
