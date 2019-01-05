@@ -27,8 +27,8 @@
 
     @media (min-width: $screen-lg) {
       width: 1160px;
-      grid-template-columns: 2fr 4fr 6fr;
-      grid-column-gap: 40px;
+      grid-template-columns: 160px 320px 560px;
+      grid-column-gap: 60px;
       grid-row-gap: 0;
       grid-template-areas: 'books__pages  books__img     books__header'
                            'books__pages  books__img     books__info'
@@ -38,6 +38,10 @@
 
   &__header {
     grid-area: books__header;
+
+    @media (min-width: $screen-md) {
+      // margin-bottom: 60px;
+    }
 
     p:first-child {
       margin-bottom: 15px;
@@ -55,12 +59,19 @@
   &__img {
     grid-area: books__img;
     width: 100%;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 55px;
+    }
   }
 
   &__pages {
     display: none;
 
     @media (min-width: $screen-md) {
+      margin-top: 20px;
+      margin-bottom: 60px;
+      padding: 16px 6px;
       display: flex;
       justify-content: space-around;
       grid-area: books__pages;
@@ -68,6 +79,9 @@
     }
 
     @media (min-width: $screen-lg) {
+      padding: 16px;
+      margin-top: 0;
+      margin-bottom: 0;
       flex-direction: column;
     }
   }
@@ -110,7 +124,16 @@
     }
   }
 
+  &__input-wrap {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
   &__input {
+    margin-right: 10px;
     width: 80px;
     height: 50px;
     text-align: center;
@@ -129,6 +152,16 @@
     border-color: transparent;
     background-color: #000;
     border-radius: 3px;
+
+    @media (min-width: $screen-md) {
+      margin-right: 40px;
+      width: 200px;
+      order: -1;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 260px;
+    }
   }
 
   &__like {
@@ -183,6 +216,45 @@
       background-image: url('../../img/arrow-down.svg');
       background-repeat: no-repeat;
       background-position-y: 4px;
+    }
+  }
+
+  &__socials {
+    margin-top: 40px;
+  }
+
+  &__socials-list {
+    display: flex;
+  }
+
+  &__socials-item {
+    display: flex;
+    margin-right: 30px;
+    font-weight: 700;
+
+    &:before {
+      display: block;
+      content: '';
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+    }
+
+    &:first-child:before {
+      background-image: url('../../img/icon-facebook.svg');
+    }
+
+    &:nth-child(2):before {
+      background-image: url('../../img/icon-vkontakte.svg');
+    }
+
+    &:nth-child(3):before {
+      background-image: url('../../img/icon-thumbs-up.svg');
+    }
+
+     &:last-child:before {
+      background-image: url('../../img/icon-thumbs-down.svg');
     }
   }
 }
