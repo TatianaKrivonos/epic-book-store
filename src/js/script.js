@@ -105,8 +105,17 @@ function sendRequest(data){
 $(document).ready(function(){
   $('.j-slider').slick();
 
+  $(".catalog__tab-link--all").addClass("active");
+
   $(".catalog__tab-link").on("click", function(){
     $(".catalog__tab-link").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  $(".paginator__link--first").addClass("active");
+
+  $(".paginator__link").on("click", function(){
+    $(".paginator__link").removeClass("active");
     $(this).addClass("active");
   });
 });
