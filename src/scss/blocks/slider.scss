@@ -1,10 +1,12 @@
 .slider {
+  padding-bottom: 70px;
 
   &__item-wrap {
 
     @media (min-width: $screen-lg) {
         display: flex;
         padding-left: 60px;
+        padding-bottom: 0;
     }
   }
 
@@ -22,14 +24,15 @@
   }
 
   &__name {
+    padding-left: 20px;
+    padding-right: 15px;
     margin-bottom: 50px;
-    width: 260px;
     font-size: 14px;
     font-style: italic;
 
     @media (min-width: $screen-md) {
-      padding-right: 70px;
-      width: 360px;
+      padding: 0;
+      width: 330px;
       font-size: 16px;
     }
 
@@ -39,8 +42,7 @@
   }
 
   &__descr {
-    margin: 0 -20px;
-    padding: 45px 35px 55px 12px;
+    padding: 45px 35px 25px 12px;
     border: 8px solid $gray-lighter;
 
     @media (min-width: $screen-md) {

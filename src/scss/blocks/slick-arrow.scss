@@ -1,0 +1,37 @@
+.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  padding: 0;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  font: 0/0 a;
+  color: transparent;
+  background-color: #f4d4e4;
+  border-radius: 50%;
+  background-image: url('../../img/arrow.png');
+  background-repeat: no-repeat;
+  background-position: 14px 12px;
+
+  @media (min-width: $screen-md) {
+    top: 50%;
+  }
+}
+
+.slick-prev {
+  left: 60px;
+
+  @media (min-width: $screen-md) {
+    left: 0;
+  }
+}
+
+.slick-next {
+  right: 60px;
+  transform: rotate(180deg);
+
+  @media (min-width: $screen-md) {
+    right: 0;
+  }
+}
