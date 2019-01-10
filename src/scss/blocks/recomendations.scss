@@ -16,10 +16,12 @@
   }
 
   &__title {
+    margin-bottom: 30px;
     font-size: 30px;
     font-weight: 700;
 
     @media (min-width: $screen-md) {
+      margin-bottom: 55px;
       font-size: 50px;
     }
   }
@@ -34,6 +36,7 @@
 
     @media (min-width: $screen-lg) {
       grid-template-rows: 170px 170px 180px 170px;
+      grid-gap: 10px;
       margin: 0 0 0 -20px;
       width: 1180px;
     }
@@ -67,7 +70,7 @@
     }
 
     &--1 {
-      padding: 25px 30px;
+      padding: 25px 15px;
       background-color: #fff;
 
       p {
@@ -161,7 +164,7 @@
     }
 
     &--5 {
-      padding: 25px;
+      padding: 25px 15px;
       background-color: #ce6194;
       color: #fff;
 
