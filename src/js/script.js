@@ -102,6 +102,14 @@ function sendRequest(data){
   }
 };
 
+let toggle = document.getElementById('toggle');
+  toggle.addEventListener('click', menuVisible);
+  function menuVisible(e) {
+    e.preventDefault();
+    toggle.classList.toggle('toggle--close');
+    document.getElementById('menuList').classList.toggle('main-nav__list--open');
+  };
+
 $(document).ready(function(){
   $('.j-slider').slick();
 

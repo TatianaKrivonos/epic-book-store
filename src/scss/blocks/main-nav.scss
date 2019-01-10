@@ -1,5 +1,6 @@
 
 .main-nav {
+  position: relative;
 
   @media (min-width: $screen-md) {
     display: flex;
@@ -17,18 +18,52 @@
     @media (min-width: $screen-lg) {
       margin-right: 60px;
     }
+
+    &--open {
+      position: absolute;
+      top: 45px;
+      right: -20px;
+      z-index: 1;
+      display: block;
+      padding: 20px 0 0 50px;
+      width: 195px;
+      height: 140px;
+      background-color: rgba(244, 215, 230, 0.8);
+    }
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-md) {
+        margin-bottom: 0;
+      }
+
+    &--tel {
+      margin-left: -20px;
+
+      a {
+        color: #1a1ff7;
+        font-weight: 700;
+      }
+
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
   }
 
   &__link {
     font-weight: 700;
     text-transform: lowercase;
 
-    &--active {
-      color: #d7569c;
-    }
-
     @media (min-width: $screen-md) {
       padding-right: 20px;
+    }
+
+    &--active {
+      color: #d7569c;
     }
 
     &:hover {
@@ -45,17 +80,6 @@
   }
 
   &__icon--basket {
-
-    @media (min-width: $screen-md) {
-      display: block;
-      margin-right: 20px;
-    }
-  }
-
-  &__icon--toggle {
-
-    @media (min-width: $screen-md) {
-      display: none;
-    }
+    margin-right: 20px;
   }
 }
