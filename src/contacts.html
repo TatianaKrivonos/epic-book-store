@@ -55,7 +55,7 @@
       </a>
       <div class="page-header__work-time">с 9:00 до 19:00</div>
       <nav class="page-header__main-nav main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list" id="menuList">
           <li class="main-nav__item">
             <a href="./books.html" class="main-nav__link">Книги</a>
           </li>
@@ -64,6 +64,12 @@
           </li>
           <li class="main-nav__item">
             <a href="./contacts.html" class="main-nav__link">Контакты</a>
+          </li>
+          <li class="main-nav__item main-nav__item--tel">
+            <svg width="20" height="21">
+              <use xlink:href="img/sprite.svg#button_phone" fill="#1a1ff7"></use>
+            </svg>
+            <a href="tel:+78005008020">8 800 500-80-20</a>
           </li>
         </ul>
         <a href="" class="main-nav__icon main-nav__icon--basket">
@@ -76,7 +82,9 @@
             <use xlink:href="img/sprite.svg#button_phone"></use>
           </svg>
         </a>
-        <button class="main-nav__icon main-nav__icon--toggle"></button>
+        <button class="main-nav__icon toggle" id="toggle">
+          <span></span>
+        </button>
       </nav>
     </div>
   </header>
