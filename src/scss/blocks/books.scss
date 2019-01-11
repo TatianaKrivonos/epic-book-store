@@ -3,7 +3,7 @@
   &__container {
     margin: 0 auto;
     width: 100%;
-    padding: 40px 30px;
+    padding: 40px 30px 0 40px;
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
@@ -13,9 +13,9 @@
                          'books__descr';
 
     @media (min-width: $screen-md) {
-      padding: 40px 0;
+      padding: 40px 0 0;
       width: 760px;
-      grid-template-columns: 3fr 5fr;
+      grid-template-columns: 260px 540px;
       grid-column-gap: 40px;
       grid-row-gap: 0;
       grid-template-areas: 'books__img     books__header'
@@ -39,10 +39,6 @@
   &__header {
     grid-area: books__header;
 
-    @media (min-width: $screen-md) {
-      // margin-bottom: 60px;
-    }
-
     p:first-child {
       margin-bottom: 15px;
       font-size: 14px;
@@ -61,7 +57,7 @@
     width: 100%;
 
     @media (min-width: $screen-lg) {
-      margin-bottom: 55px;
+      margin-bottom: 25px;
     }
   }
 
@@ -83,6 +79,19 @@
       margin-top: 0;
       margin-bottom: 0;
       flex-direction: column;
+    }
+  }
+
+  &__pages-img {
+
+    @media (min-width: $screen-md) {
+      width: 77px;
+      height: 90px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 120px;
+      height: 139px;
     }
   }
 
@@ -143,7 +152,8 @@
   }
 
   &__btn {
-    margin: 20px 0;
+    margin-top: 30px;
+    margin-bottom: 25px;
     padding: 15px 0;
     width: 100%;
     color: #fff;
@@ -160,6 +170,7 @@
     }
 
     @media (min-width: $screen-lg) {
+      margin-right: 20px;
       width: 260px;
     }
   }
@@ -180,7 +191,8 @@
     }
 
     span {
-      padding-left: 30px;
+      font-size: 14px;
+      padding-left: 20px;
       font-style: italic;
     }
   }
@@ -190,6 +202,7 @@
   }
 
   &__descr-title {
+    margin-top: 35px;
     margin-bottom: 20px;
     font-size: 24px;
   }
@@ -202,7 +215,7 @@
     position: relative;
     display: inline-flex;
     padding-right: 25px;
-    margin-top: 50px;
+    margin-top: 10px;
     color: #2a34fa;
 
     &:after {
@@ -229,32 +242,13 @@
 
   &__socials-item {
     display: flex;
-    margin-right: 30px;
+    align-items: center;
     font-weight: 700;
+    margin-right: 30px;
 
-    &:before {
-      display: block;
-      content: '';
+    a {
+      display: inline-block;
       margin-right: 10px;
-      width: 20px;
-      height: 20px;
-      background-repeat: no-repeat;
-    }
-
-    &:first-child:before {
-      background-image: url('../../img/icon-facebook.svg');
-    }
-
-    &:nth-child(2):before {
-      background-image: url('../../img/icon-vkontakte.svg');
-    }
-
-    &:nth-child(3):before {
-      background-image: url('../../img/icon-thumbs-up.svg');
-    }
-
-     &:last-child:before {
-      background-image: url('../../img/icon-thumbs-down.svg');
     }
   }
 }
