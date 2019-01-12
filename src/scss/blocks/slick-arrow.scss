@@ -20,7 +20,7 @@
 }
 
 .slick-prev {
-  left: 60px;
+  left: 100px;
 
   @media (min-width: $screen-md) {
     left: 0;
@@ -28,7 +28,7 @@
 }
 
 .slick-next {
-  right: 60px;
+  right: 100px;
   transform: rotate(180deg);
 
   @media (min-width: $screen-md) {

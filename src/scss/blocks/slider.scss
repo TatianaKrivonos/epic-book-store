@@ -1,12 +1,15 @@
 .slider {
-  padding-bottom: 70px;
+  padding-bottom: 60px;
+
+  @media (min-width: $screen-md) {
+       padding-bottom: 0;
+  }
 
   &__item-wrap {
 
     @media (min-width: $screen-lg) {
         display: flex;
         padding-left: 60px;
-        padding-bottom: 0;
     }
   }
 
@@ -26,7 +29,7 @@
   &__name {
     padding-left: 20px;
     padding-right: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 14px;
     font-style: italic;
 
@@ -42,22 +45,26 @@
   }
 
   &__descr {
-    padding: 45px 35px 25px 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 30px 12px;
+    height: 280px;
     border: 8px solid $gray-lighter;
 
     @media (min-width: $screen-md) {
       margin: 0;
-      padding: 55px 80px 55px 45px;
+      padding: 40px 45px 60px 35px;
+      height: 310px;
     }
 
     @media (min-width: $screen-lg) {
       margin: 0;
-      padding: 55px 0 55px 40px;
+      padding: 45px 0 50px 32px;
+      height: 350px;
       width: 500px;
     }
 
     p {
-      margin-bottom: 40px;
       font-size: 24px;
       font-weight: 700;
 
@@ -69,6 +76,11 @@
         width: 515px;
         font-size: 40px;
       }
+    }
+
+    a {
+      display: inline-block;
+      margin-top: auto;
     }
   }
 
