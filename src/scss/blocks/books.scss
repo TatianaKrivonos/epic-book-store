@@ -254,10 +254,15 @@
     font-weight: 700;
     margin-right: 30px;
 
+    &:last-child {
+      margin-right: 0;
+    }
+
     button {
+      padding: 0;
+      margin-right: 10px;
       background-color: transparent;
       border: 0;
-      margin-right: 10px;
 
       &:hover {
         cursor: pointer;
