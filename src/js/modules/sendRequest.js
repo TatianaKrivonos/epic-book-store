@@ -8,7 +8,7 @@ function sendRequest(data, onSuccess){
 
 		xhr.onreadystatechange = function(){
 			if(xhr.readyState === 4 && xhr.status === 200) {
-				
+
 				const responseObj = JSON.parse(xhr.responseText);
 				onSuccess(responseObj);
 

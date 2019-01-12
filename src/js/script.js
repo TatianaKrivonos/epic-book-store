@@ -23,6 +23,24 @@ let toggle = document.getElementById('toggle');
     document.getElementById('menuList').classList.toggle('main-nav__list--open');
   };
 
+$(document).ready(function(){
+  $('.j-slider').slick();
+
+  $(".catalog__tab-link--all").addClass("active");
+
+  $(".catalog__tab-link").on("click", function(){
+    $(".catalog__tab-link").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  $(".paginator__link--first").addClass("active");
+
+  $(".paginator__link").on("click", function(){
+    $(".paginator__link").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+
 //объект данныхдля ajax запроса
 const data = {
   page: 1,
@@ -59,7 +77,7 @@ function createDataAjax(){
 
 //вешаем слушатели на табы
 const tabsWrap = document.querySelector('.j-tabs');
-const tabsArray = Array.from(tabsWrap.children);
+const tabsArray = Array.prototype.slice.call(tabsWrap.children);
 
 tabsArray.forEach(function(tab) {
   const link = tab.firstElementChild;
@@ -111,20 +129,3 @@ function sendRequest(data){
   }
 };
 
-$(document).ready(function(){
-  $('.j-slider').slick();
-
-  $(".catalog__tab-link--all").addClass("active");
-
-  $(".catalog__tab-link").on("click", function(){
-    $(".catalog__tab-link").removeClass("active");
-    $(this).addClass("active");
-  });
-
-  $(".paginator__link--first").addClass("active");
-
-  $(".paginator__link").on("click", function(){
-    $(".paginator__link").removeClass("active");
-    $(this).addClass("active");
-  });
-});

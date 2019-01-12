@@ -1,7 +1,7 @@
 
 function createEventListener() {
 	const tabsWrap = document.querySelector('.j-tabs');
-	const tabsArray = Array.from(tabsWrap.children);
+	const tabsArray = Array.prototype.slice.call(tabsWrap.children);
 
 	tabsArray.forEach(function(tab) {
 		const link = tab.firstElementChild;
@@ -15,7 +15,7 @@ function createEventListener() {
 			sendRequest(dataAjax);
 
 		});
-		
+
 	});
 }
 
