@@ -167,6 +167,14 @@
     border-color: transparent;
     background-color: #000;
 
+    &:hover {
+      background-color: #d7569c;
+    }
+
+    &:active {
+      background-color: #d72384;
+    }
+
     @media (min-width: $screen-md) {
       width: 300px;
     }

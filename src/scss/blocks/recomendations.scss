@@ -164,6 +164,14 @@
         color: #fff;
         font-weight: 700;
         text-align: center;
+
+        &:hover {
+          background-color: #d7569c;
+        }
+
+        &:active {
+          background-color: #d72384;
+        }
       }
     }
 
