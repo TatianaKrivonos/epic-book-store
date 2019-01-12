@@ -11,11 +11,52 @@
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody()</script>
  <!--  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKGPSYLYZAF_Z5jczPppT0cuxzEi_XMu8"></script> -->
+ <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+ <script>
+  ymaps.ready(function () {
+    let myMap = new ymaps.Map('map', {
+      center: [59.916933, 30.280519],
+      zoom: 17,
+      controls: [],
+    },
+    {
+      suppressMapOpenBlock: true,
+      searchControlProvider: 'yandex#search'
+    }),
+
+    // Создаём макет содержимого.
+    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    ),
+
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Собственный значок метки',
+    }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: '../img/icon_pin.svg',
+        // Размеры метки.
+        iconImageSize: [20, 26],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+    });
+
+    myMap.behaviors.disable('scrollZoom'),
+    myMap.geoObjects.add(myPlacemark);
+
+    myMap.controls.add('zoomControl', {
+      size: "large"
+    });
+  });
+ </script>
 </head>
 <body>
 	<header class="page-header">
     <div class="page-header__container">
-      <a href="#" class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <svg width="130" height="14">
           <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
@@ -117,7 +158,6 @@
       </div>
     </div>
   </footer>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script type="module" src ="js/script.js"></script>

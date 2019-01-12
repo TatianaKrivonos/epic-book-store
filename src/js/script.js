@@ -1,5 +1,6 @@
 import insertElement from '../js/modules/insertElement.js';
 import bookCardTemplate from '../js/modules/bookCardTemplate.js';
+// import map from '../js/modules/map.js';
 
 //карта google
 // function initMap() {
@@ -23,47 +24,6 @@ import bookCardTemplate from '../js/modules/bookCardTemplate.js';
 // }
 
 //   google.maps.event.addDomListener(window, "load", initMap);
-
-
-//карта яндекс
-ymaps.ready(function () {
-      let myMap = new ymaps.Map('map', {
-        center: [59.916933, 30.280519],
-        zoom: 17,
-        controls: [],
-      },
-      {
-        suppressMapOpenBlock: true,
-        searchControlProvider: 'yandex#search'
-      }),
-
-      // Создаём макет содержимого.
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-      ),
-
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          hintContent: 'Собственный значок метки',
-      }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#image',
-          // Своё изображение иконки метки.
-          iconImageHref: '../img/icon_pin.svg',
-          // Размеры метки.
-          iconImageSize: [20, 26],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-5, -38]
-      });
-
-      myMap.behaviors.disable('scrollZoom'),
-      myMap.geoObjects.add(myPlacemark);
-
-      myMap.controls.add('zoomControl', {
-        size: "large"
-      });
-    });
 
 // кнопка меню
 let toggle = document.getElementById('toggle');
