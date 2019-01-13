@@ -39,6 +39,14 @@
   &__header {
     grid-area: books__header;
 
+    @media (min-width: $screen-md) {
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+    }
+
     p:first-child {
       margin-bottom: 15px;
       font-size: 14px;
