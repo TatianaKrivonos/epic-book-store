@@ -11,7 +11,7 @@ const bookCardTemplate = {
 					<img src="./img/books_all/${product.uri}.png" alt="${product.name}" class="product-card__img">
 				</a>
 				<p class="product-card__descr">${product.desc}</p>
-					<div class="product-card__price">${product.price} </div>`;
+					<div class="product-card__price">${product.price} &#8381;</div>`;
 	}
 }
 

@@ -43,18 +43,6 @@
     display: flex;
     margin-top: auto;
     font-weight: 700;
-
-    &:after {
-      position: absolute;
-      left: 40px;
-      display: block;
-      content: '';
-      width: 15px;
-      height: 15px;
-      background-image: url('../../img/ruble.svg');
-      background-repeat: no-repeat;
-      background-position: 0 2px;
-    }
   }
 }
 

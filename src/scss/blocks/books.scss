@@ -135,18 +135,6 @@
       position: relative;
       display: flex;
       font-weight: 700;
-
-      &:after {
-      position: absolute;
-      left: 30px;
-      display: block;
-      content: '';
-      width: 15px;
-      height: 15px;
-      background-image: url('../../img/ruble.svg');
-      background-repeat: no-repeat;
-      background-position: 0 2px;
-      }
     }
   }
 
