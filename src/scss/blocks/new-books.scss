@@ -34,10 +34,19 @@
     }
 
     @media (min-width: $screen-md) {
-      position: absolute;
-      right: 0;
+      float: right;
     }
 	}
+
+  &__scroll {
+    overflow-x: scroll;
+
+    @media (min-width: $screen-lg) {
+      margin: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+  }
 
 	&__row {
 		display: flex;
