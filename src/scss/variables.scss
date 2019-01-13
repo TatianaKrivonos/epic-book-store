@@ -4,9 +4,10 @@ $second-color:        #1a1ff7; // синий
 $third-color:         #d7569c; // розовый
 $third-color-light:   #f4d4e4; //светло-розовый
 $third-color-dark:    #ef529f;
+$third-color-darker:  #d72384;
 
 $btn-hover:           $third-color;
-$btn-pressed:         #d72384;
+$btn-pressed:         $third-color-darker;
 
 $gray-lightest:       #f5f5f5; // body
 $gray-lighter:        #e8e8e8; //рамки и табы
