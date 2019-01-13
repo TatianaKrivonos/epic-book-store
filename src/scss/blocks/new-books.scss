@@ -34,8 +34,8 @@
     }
 
     @media (min-width: $screen-md) {
-      display: block;
-      text-align: right;
+      position: absolute;
+      right: 0;
     }
 	}
 

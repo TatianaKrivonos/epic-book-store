@@ -98,6 +98,10 @@
       a {
         color: $second-color;
         font-weight: 700;
+
+        &:hover {
+          opacity: 0.6;
+        }
       }
     }
 

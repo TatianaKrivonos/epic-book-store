@@ -131,8 +131,17 @@
       }
     }
 
+    p {
+      font-size: 14px;
+    }
+
     a {
+      font-size: 14px;
       color: $second-color;
+
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 
@@ -154,7 +163,7 @@
       background-image: url('../../img/check.png');
       background-repeat: no-repeat;
       transform: scale(0);
-      transition: 0.5s;
+      transition: 0.3s;
     }
   }
 

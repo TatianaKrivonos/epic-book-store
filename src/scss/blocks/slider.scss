@@ -84,6 +84,10 @@
     margin-top: auto;
     font-size: 16px;
     color: $second-color;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &__img {
