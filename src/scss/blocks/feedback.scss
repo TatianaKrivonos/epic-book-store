@@ -86,7 +86,7 @@
     width: 100%;
     background-color: transparent;
     border-color: transparent;
-    border-bottom: 4px solid #d0d0d0;
+    border-bottom: 4px solid $gray-light;
 
     @media (min-width: $screen-md) {
       width: 300px;
@@ -127,12 +127,12 @@
 
       &:checked + .feedback__checked:before {
         transform: scale(1);
-        background-color: #d0d0d0;
+        background-color: $gray-light;
       }
     }
 
     a {
-      color: #1a1ff7;
+      color: $second-color;
     }
   }
 
@@ -143,7 +143,7 @@
     min-width: 20px;
     min-height: 20px;
     max-height: 20px;
-    border: 4px solid #d0d0d0;
+    border: 4px solid $gray-light;
 
     &:before {
       width: 12px;
@@ -168,11 +168,11 @@
     background-color: #000;
 
     &:hover {
-      background-color: #d7569c;
+      background-color: $btn-hover;
     }
 
     &:active {
-      background-color: #d72384;
+      background-color: $btn-pressed;
     }
 
     @media (min-width: $screen-md) {

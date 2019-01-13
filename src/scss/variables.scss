@@ -1,24 +1,27 @@
-$main-color:          #7dcbcf;
-$main-color-dark:     #4aa2a5;
-$second-color:        #1f2455;
-$second-color-light:  #6a4099;
-$warning-color:       #fdc05d;
 
+$main-color:          #130f23;
+$second-color:        #1a1ff7; // синий
+$third-color:         #d7569c; // розовый
+$third-color-light:   #f4d4e4; //светло-розовый
+$third-color-dark:    #ef529f;
 
-$gray-lightest:       #f5f5f5;
-$gray-lighter:        #e8e8e8;
-$gray-light:          #8a8a8a;
+$btn-hover:           $third-color;
+$btn-pressed:         #d72384;
+
+$gray-lightest:       #f5f5f5; // body
+$gray-lighter:        #e8e8e8; //рамки и табы
+$gray-light:          #d0d0d0; // подчеркивания
 $gray-dark:           #6d6f6e;
 $gray-darker:         #333333;
 
 
-$text-color:          $gray-dark;
+$text-color:          #000;
 
 $font-family:         Montserrat, Helvetica Neue, sans-serif;
 $font-size:           16px;
 $first-title-size:    30px;
 $second-title-size:   24px;
-$line-height:         1.4;
+$line-height:         70px;
 
 
 $screen-sm:           320px;

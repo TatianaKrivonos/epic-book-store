@@ -77,16 +77,13 @@
         font-size: 40px;
       }
     }
-
-    a {
-      display: inline-block;
-      margin-top: auto;
-    }
   }
 
   &__link {
+    display: inline-block;
+    margin-top: auto;
     font-size: 16px;
-    color: #1a1ff7;
+    color: $second-color;
   }
 
   &__img {

@@ -51,12 +51,12 @@
     }
 
     &:hover {
-      background-color: #f4d4e4;
+      background-color: $third-color-light;
     }
 
     &.active {
-      color: #f075b1;
-      background-color: #f4d4e4;
+      color: $third-color;
+      background-color: $third-color-light;
     }
   }
 }

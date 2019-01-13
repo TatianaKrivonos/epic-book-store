@@ -1,5 +1,5 @@
 .new-books {
-  background: linear-gradient(to bottom, $gray-lightest 40%, #f4d4e4 40%);
+  background: linear-gradient(to bottom, $gray-lightest 40%, $third-color-light 40%);
 
 	&__container {
 		margin: 0 auto;
@@ -27,7 +27,7 @@
 	}
 
 	&__link {
-		color: #1a1ff7;
+		color: $second-color;
 
     &:hover {
       opacity: 0.6;

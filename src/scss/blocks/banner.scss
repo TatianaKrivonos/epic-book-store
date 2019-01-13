@@ -3,6 +3,7 @@
   background-image: linear-gradient(rgba(220, 117, 172, 0.7), rgba(220, 117, 172, 0.7)), url('../../img/banner.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $third-color;
 
   @media (min-width: $screen-md) {
     padding: 70px 80px 120px 80px;

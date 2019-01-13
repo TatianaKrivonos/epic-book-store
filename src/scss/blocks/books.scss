@@ -71,7 +71,7 @@
       display: flex;
       justify-content: space-around;
       grid-area: books__pages;
-      border: 4px solid #e8e8e8;
+      border: 4px solid $gray-lighter;
     }
 
     @media (min-width: $screen-lg) {
@@ -164,11 +164,11 @@
     border-radius: 3px;
 
     &:hover {
-      background-color: #d7569c;
+      background-color: $third-color;
     }
 
     &:active {
-      background-color: #d72384;
+      background-color: $btn-pressed;
     }
 
     @media (min-width: $screen-md) {
@@ -224,7 +224,7 @@
     display: inline-flex;
     padding-right: 25px;
     margin-top: 10px;
-    color: #2a34fa;
+    color: $second-color;
 
     &:after {
       position: absolute;

@@ -30,12 +30,12 @@
 
     &.active {
       padding-bottom: 20px;
-      color: #1a1ff7;
-      border-bottom: 3px solid #ef529f;
+      color: $second-color;
+      border-bottom: 3px solid $third-color-dark;
     }
 
     &:hover {
-      color: #1a1ff7;
+      color: $second-color;
     }
   }
 
