@@ -7,7 +7,7 @@ const bookCardTemplate = {
 		return `<a href="${product.link}">
 			       <h3 class="product-card__title">${product.name}</h3>
 			    </a>
-				<a href="${product.link}" class="product-card__img-wrap">
+				<a href="books.html" class="product-card__img-wrap">
 					<img src="./img/books_all/${product.uri}.png" alt="${product.name}" class="product-card__img">
 				</a>
 				<p class="product-card__descr">${product.desc}</p>
