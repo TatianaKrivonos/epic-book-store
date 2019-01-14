@@ -259,6 +259,14 @@
     font-weight: 700;
     margin-right: 30px;
 
+    &:hover {
+      color: $third-color-dark;
+
+      svg {
+        fill: $third-color-dark;
+      }
+    }
+
     &:last-child {
       margin-right: 0;
     }
