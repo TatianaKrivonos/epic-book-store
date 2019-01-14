@@ -222,11 +222,19 @@
 
   &__descr-text {
     margin-bottom: 30px;
+
+    &--hide {
+      display: none;
+      margin-top: 30px;
+    }
   }
 
-  &__descr-link {
+  &__descr-btn {
     position: relative;
     display: inline-flex;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
     padding-right: 25px;
     margin-top: 10px;
     color: $second-color;

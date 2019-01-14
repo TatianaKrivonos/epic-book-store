@@ -54,6 +54,10 @@ $(document).ready(function(){
     $(".paginator__link").removeClass("active");
     $(this).addClass("active");
   });
+
+  $(".books__descr-btn").click(function(){
+    $(".books__descr-text--hide").toggle('slow');
+  });
 });
 
 //объект данныхдля ajax запроса
