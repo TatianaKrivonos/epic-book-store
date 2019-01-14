@@ -41,11 +41,16 @@
       }
 
     &--tel {
-      margin-left: -20px;
+      margin-left: -25px;
 
       a {
         color: $second-color;
         font-weight: 700;
+      }
+
+      svg {
+        margin-right: 5px;
+        fill: $second-color;
       }
 
       @media (min-width: $screen-md) {
