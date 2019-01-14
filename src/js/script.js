@@ -37,7 +37,9 @@ let toggle = document.getElementById('toggle');
 
 //jQuery
 $(document).ready(function(){
-  $('.j-slider').slick();
+  $('.j-slider').slick({
+    infinite: false
+  });
 
   $(".catalog__tab-link--all").addClass("active");
 
