@@ -154,6 +154,15 @@
     background-color: #ddd;
     border-color: transparent;
     border-radius: 3px;
+
+    &:hover {
+      background-color: #ececec;
+    }
+
+    &:focus {
+      background-color: #ededed;
+      border: 2px solid #c6c6c6;
+    }
   }
 
   &__btn {
