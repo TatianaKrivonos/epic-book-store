@@ -78,14 +78,8 @@
 
 
   &__row {
-
-    @media (min-width: $screen-md) {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    @media (min-width: $screen-lg) {
-      justify-content: space-between;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
