@@ -5,50 +5,50 @@
   margin: 0 10px 50px 10px;
   border: 8px solid $gray-lighter;
 
+  @media (min-width: $screen-md) {
+    margin: 0 40px 50px 40px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin: 0 30px 50px 30px;
+  }
+
+  &:after,
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 8px;
+    background-color: $gray-lightest;
+  }
+
+  &:before {
+    top: -8px;
+    left: 52px;
+    width: 150px;
+
     @media (min-width: $screen-md) {
-      margin: 0 40px 50px 40px;
+      width: 170px;
     }
 
     @media (min-width: $screen-lg) {
-      margin: 0 30px 50px 30px;
+      width: 400px;
+    }
+  }
+
+  &:after {
+    bottom: -8px;
+    right: 52px;
+    width: 110px;
+
+    @media (min-width: $screen-md) {
+      width: 280px;
     }
 
-    &:after,
-    &:before {
-      position: absolute;
-      display: block;
-      content: '';
-      height: 8px;
-      background-color: $gray-lightest;
+    @media (min-width: $screen-lg) {
+      width: 740px;
     }
-
-    &:before {
-      top: -8px;
-      left: 52px;
-      width: 150px;
-
-      @media (min-width: $screen-md) {
-        width: 170px;
-      }
-
-      @media (min-width: $screen-lg) {
-        width: 400px;
-      }
-    }
-
-    &:after {
-      bottom: -8px;
-      right: 52px;
-      width: 110px;
-
-      @media (min-width: $screen-md) {
-        width: 280px;
-      }
-
-      @media (min-width: $screen-lg) {
-        width: 740px;
-      }
-    }
+  }
 
   &__container {
     margin: 0 auto;
@@ -108,6 +108,10 @@
         margin: 0;
       }
     }
+
+    &:focus {
+      border-bottom: 4px solid $third-color;
+    }
   }
 
   &__checbox {
@@ -127,7 +131,7 @@
 
       &:checked + .feedback__checked:before {
         transform: scale(1);
-        background-color: $gray-light;
+        background-color: $gray-lighter;
       }
     }
 
@@ -152,7 +156,7 @@
     min-width: 20px;
     min-height: 20px;
     max-height: 20px;
-    border: 4px solid $gray-light;
+    border: 4px solid $gray-lighter;
 
     &:before {
       width: 12px;
