@@ -9,7 +9,8 @@
     }
 
     @media (min-width: $screen-lg) {
-      margin: 0 30px;
+      margin: 0 auto;
+      width: 1220px;
     }
 
     &:after,
