@@ -2,69 +2,220 @@
 <html lang="ru" class="no-js  page">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>BOOK STORE</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <script>
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    </script>
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody()</script>
 </head>
 <body>
 	<header class="page-header">
-		<div class="page-header__container">
-			<a href="#" class="logo">
-				<img src="img/logo.png" alt="book store" width="130px" height="20px">
-			</a>
-			<div class="work-time">с 9:00 до 19:00</div>
-			<nav class="main-nav">
-				<ul class="main-nav__list">
-					<li class="main-nav__item">
-						<a href="./books.html" class="main-nav__link">Книги</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="./recomendations.html" class="main-nav__link">Рекомендации</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="./contacts.html" class="main-nav__link">Контакты</a>
-					</li>
-				</ul>
-				<a href="" class="main-nav__icon main-nav__icon--basket">
-					<img src="img/shopping-cart.svg" alt="basket" width="20px" height="20px">
-				</a>
-				<a href="tel:+78005008020" class="main-nav__icon main-nav__icon--tel">
-					<img src="img/phone-receiver.svg" alt="tel" width="20px" height="20px">
-				</a>
-				<button class="main-nav__icon main-nav__icon--toggle"></button>
-			</nav>
-		</div>
-	</header>
+    <div class="page-header__container">
+      <a href="index.html" class="page-header__logo">
+        <svg width="130" height="14">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="page-header__work-time">с 9:00 до 19:00</div>
+      <nav class="page-header__main-nav main-nav">
+        <ul class="main-nav__list" id="menuList">
+          <li class="main-nav__item">
+            <a href="./books.html" class="main-nav__link main-nav__link--active">Книги</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="./recomendations.html" class="main-nav__link">Рекомендации</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="./contacts.html" class="main-nav__link">Контакты</a>
+          </li>
+          <li class="main-nav__item main-nav__item--tel">
+            <svg width="20" height="21">
+              <use xlink:href="img/sprite.svg#button_phone"></use>
+            </svg>
+            <a href="tel:+78005008020">8 800 500-80-20</a>
+          </li>
+        </ul>
+        <a href="" class="main-nav__icon main-nav__icon--basket">
+          <svg width="20" height="21">
+            <use xlink:href="img/sprite.svg#icon-basket"></use>
+          </svg>
+        </a>
+        <a href="tel:+78005008020" class="main-nav__icon main-nav__icon--tel">
+          <svg width="20" height="21">
+            <use xlink:href="img/sprite.svg#button_phone"></use>
+          </svg>
+        </a>
+        <button class="main-nav__icon toggle" id="toggle">
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
 	<main>
-	
+    <section class="books">
+      <div class="books__container">
+        <div class="books__header">
+          <p>Эдди Юн</p>
+          <h1 class="books__title">Супер-потребители</h1>
+          <p>Кто это и почему они так важны для вашего бизнеса</p>
+        </div>
+        <div class="books__img">
+          <img src="img/books/superPotr.jpg" alt="Супер-потребители" width="300" height="400">
+        </div>
+        <div class="books__pages">
+          <div class="books__pages-img">
+            <img src="img/book-page.png" alt="page1" width="50" height="70">
+          </div>
+          <div class="books__pages-img">
+            <img src="img/book-page.png" alt="page2" width="50" height="70">
+          </div>
+          <div class="books__pages-img">
+            <img src="img/book-page.png" alt="page3" width="50" height="70">
+          </div>
+        </div>
+        <div class="books__info">
+          <div class="books__features">
+            <ul class="books__features-list">
+              <li>Арктикул</li>
+              <li>В наличии</li>
+              <li>Издательство</li>
+              <li>Цена</li>
+            </ul>
+            <ul class="books__features-descr">
+              <li>1090763</li>
+              <li>5 шт.</li>
+              <li>Издал</li>
+              <li>800 &#8381;</li>
+            </ul>
+          </div>
+          <div class="books__input-wrap">
+            <label for="amount"><input type="text" name="amount" class="books__input" id="amount" value="1"> шт.</label>
+            <input type="submit" value="Добавить в корзину" class="books__btn">
+          </div>
+          <div class="books__like"><span>20 людям понравилась эта книга</span></div>
+        </div>
+        <div class="books__descr">
+          <h2 class="books__descr-title">Короткое описание</h2>
+          <p class="books__descr-text">В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
+          <p class="books__descr-text">Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты c копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.</p>
+          <button href="#" class="books__descr-btn">Показать полностью</button>
+          <p class="books__descr-text books__descr-text--hide">Какое-то скрытое описание</p>
+          <div class="books__socials">
+            <ul class="books__socials-list">
+              <li class="books__socials-item">
+                <button>
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </button>
+                <div>15</div>
+              </li>
+              <li class="books__socials-item">
+                <button>
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                  </svg>
+                </button>
+                <div>4</div>
+              </li>
+              <li class="books__socials-item">
+                <button>
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
+                  </svg>
+                </button>
+                <div>150</div>
+              </li>
+              <li class="books__socials-item">
+                <button>
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-thumbs-down"></use>
+                  </svg>
+                </button>
+                <div>0</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+	  <section class="new-books">
+      <div class="new-books__container">
+        <h2 class="new-books__title">Книги по тематике</h2>
+        <a href="" class="new-books__link">Больше книг по теме</a>
+        <div class="new-books__row">
+          <article class="product-card">
+            <a href="">
+              <h3 class="product-card__title">Латеральная логика</h3>
+            </a>
+            <a href="" class="product-card__img-wrap">
+              <img src="./img/books/book-lateralnaya-logika.jpg" alt="" class="product-card__img" width="260" height="370">
+            </a>
+            <p class="product-card__descr">Головоломный путь к нестандартному мышлению</p>
+          </article>
+          <article class="product-card">
+            <a href="">
+              <h3 class="product-card__title">Путеводитель по лжи</h3>
+            </a>
+            <a href="" class="product-card__img-wrap">
+              <img src="./img/books/book-putevoditel-po-lzhi.jpg" alt="" class="product-card__img" width="260" height="370">
+            </a>
+            <p class="product-card__descr">Критическое мышлени в эпоху постправды</p>
+          </article>
+          <article class="product-card">
+            <a href="">
+              <h3 class="product-card__title">Дао физики</h3>
+            </a>
+            <a href="" class="product-card__img-wrap">
+              <img src="./img/books/book-dao-fiziki.jpg" alt="" class="product-card__img" width="260" height="370">
+            </a>
+            <p class="product-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
+          </article>
+          <article class="product-card">
+            <a href="">
+              <h3 class="product-card__title">Не очевидно</h3>
+            </a>
+            <a href="" class="product-card__img-wrap">
+              <img src="./img/books/book-ne-ochevidno.jpg" alt="" class="product-card__img" width="260" height="370">
+            </a>
+            <p class="product-card__descr">Как выявлять тренды раньше других</p>
+          </article>
+        </div>
+      </div>
+    </section>
 		<div class="banner">
 			<p>Мы открыли для вас уютную библиотеку</p>
 			<p>Приходите к нам по адресу Никитинская 10, каждый день с 12:00 до 18:00</p>
 		</div>
 	</main>
 	<footer class="page-footer">
-		<div class="page-footer__container">
-			<a href="#" class="logo page-footer__logo">
-				<img src="img/logo.png" alt="book store" width="130px" height="20px">
-			</a>
-			<div class="work-time page-footer__work-time">с 9:00 до 19:00</div>
-			<div class="footer-nav">
-				<ul class="footer-nav__list">
-					<li class="footer-nav__item footer-nav__item--books">
-						<a href="./books.html" class="footer-nav__link">Книги</a>
-					</li>
-					<li class="footer-nav__item footer-nav__item--recom">
-						<a href="./recomendations.html" class="footer-nav__link">Рекомендации</a>
-					</li>
-					<li class="footer-nav__item footer-nav__item--contacts">
-						<a href="./contacts.html" class="footer-nav__link">Контакты</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-  <script type="module" src ="js/scriptTest.js"></script>
+    <div class="page-footer__container">
+      <a href="index.html" class="page-footer__logo">
+        <svg width="130" height="14">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="page-footer__work-time">с 9:00 до 19:00</div>
+      <div class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item footer-nav__item--books">
+            <a href="books.html" class="footer-nav__link">книги</a>
+          </li>
+          <li class="footer-nav__item footer-nav__item--recom">
+            <a href="recomendations.html" class="footer-nav__link">рекомендации</a>
+          </li>
+          <li class="footer-nav__item footer-nav__item--contacts">
+            <a href="contacts.html" class="footer-nav__link">контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src ="js/script.js"></script>
 </body>
 </html>
