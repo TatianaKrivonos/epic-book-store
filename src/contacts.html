@@ -11,10 +11,11 @@
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody()</script>
  <!--  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKGPSYLYZAF_Z5jczPppT0cuxzEi_XMu8"></script> -->
- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+ <script src="https://api-maps.yandex.ru/2.1/?apikey=72ffc878-2162-4a43-8f9e-86a35f87a7ca&lang=ru_RU" type="text/javascript">
+ </script>
  <script>
   ymaps.ready(function () {
-    let myMap = new ymaps.Map('map', {
+      var myMap = new ymaps.Map('map', {
       center: [59.916933, 30.280519],
       zoom: 17,
       controls: [],
