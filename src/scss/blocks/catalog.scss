@@ -72,14 +72,15 @@
   }
 
   &__col {
+    padding-bottom: 40px;
 
     @media (min-width: $screen-md) {
-      padding: 0 45px;
+      padding: 0 45px 40px;
       width: 50%;
     }
 
     @media (min-width: $screen-lg) {
-      padding: 0 20px;
+      padding: 0 20px 40px;
       width: 25%;
     }
   }
