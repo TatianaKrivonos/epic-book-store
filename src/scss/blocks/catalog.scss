@@ -1,4 +1,5 @@
 .catalog {
+  overflow: hidden;
 
   &__title {
 	  display: none;
@@ -14,12 +15,18 @@
     }
 
     @media (min-width: $screen-lg) {
-      padding-left: 160px;
+      padding-left: 0;
     }
 	}
 
   &__tabs {
 	display: flex;
+
+  @media (min-width: $screen-lg) {
+      margin: 0 auto;
+      padding-left: 100px;
+      width: 1160px;
+    }
 	}
 
   &__tab-item {
