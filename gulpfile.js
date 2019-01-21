@@ -23,6 +23,8 @@ const ghpages = require('gh-pages');
 const path = require('path');
 const svgstore = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
+const concat = require('gulp-concat');
+
 
 function styles() {
   return src(`${dir.src}scss/style.scss`)
@@ -109,7 +111,6 @@ function javascript() {
       //   jquery: 'jQuery'
       // }
     }))
-    .pipe(dest(`${dir.build}js`))
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(dest(`${dir.build}js`));

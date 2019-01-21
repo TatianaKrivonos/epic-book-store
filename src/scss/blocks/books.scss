@@ -38,6 +38,8 @@
 
   &__header {
     grid-area: books__header;
+    overflow: hidden;
+
 
     @media (min-width: $screen-md) {
       margin-bottom: 60px;
