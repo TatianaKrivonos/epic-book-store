@@ -119,6 +119,7 @@
         <p class="feedback__text">Напишите к нам на почту. Отвечаем в течении дня</p>
         <form action="#" name="feedback-form" method="post" class="feedback__form">
           <div class="feedback__form-wrap">
+            <p class="feedback__text-error">Вы не ввели почту</p>
             <input type="text" placeholder="Ваша почта" name="email" class="feedback__input feedback__input--mail">
             <input type="text" placeholder="Сообщение" name="message" class="feedback__input feedback__input--mess">
             <label class="feedback__checbox" for="checkbox">
@@ -126,9 +127,18 @@
               <div class="feedback__checked"></div>
               <p>Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a></p>
             </label>
+            <p class="feedback__text-error">Нужно согласиться с условиями, поставив галочку</p>
             <input type="submit" value="Отправить" class="feedback__btn">
           </div>
         </form>
+        <div class="feedback__success">
+          <h2>Ваш вопрос отправлен</h2>
+          <p>В ближайшие сутки мы ответим вам</p>
+        </div>
+        <div class="feedback__error">
+          <h2>Ошибка отправки</h2>
+          <p>К сожалению, ваш вопрос не удалось отправить — нет соединения с сервером. Пожалуйста, попробуйте позднее.</p>
+        </div>
       </div>
 		</section>
 		<div class="banner">

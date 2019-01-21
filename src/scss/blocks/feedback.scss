@@ -200,4 +200,16 @@
       order: 2;
     }
   }
+
+  &__success {
+    display: none;
+  }
+
+  &__error {
+    display: none;
+  }
+
+  &__text-error {
+    display: none;
+  }
 }
