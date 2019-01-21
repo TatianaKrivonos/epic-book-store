@@ -70,6 +70,8 @@
   &__title {
     margin-bottom: 35px;
     font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
   }
 
   &__comment {
@@ -82,5 +84,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (min-width: $screen-md) {
+      justify-content: flex-start;
+    }
   }
 }

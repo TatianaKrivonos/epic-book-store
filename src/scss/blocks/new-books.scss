@@ -5,15 +5,14 @@
 		margin: 0 auto;
     padding-left: 30px;
     padding-top: 100px;
-		width: 100%;
+		width: 1160px;
 
     @media (min-width: $screen-md) {
-      padding-left: 0;
-      width: 760px;
+      padding-left: 40px;
     }
 
     @media (min-width: $screen-lg) {
-      width: 1160px;
+      padding-left: 0;
     }
 	}
 
@@ -57,4 +56,12 @@
       width: 1160px;
     }
 	}
+
+  & .product-card {
+
+    &__img {
+      width: 260px;
+      height: 370px;
+    }
+  }
 }
