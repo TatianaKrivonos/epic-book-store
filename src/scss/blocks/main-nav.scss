@@ -9,6 +9,7 @@
   &__list {
     display: none;
 
+
     @media (min-width: $screen-md) {
       display: flex;
       margin-right: 20px;
@@ -20,11 +21,11 @@
     }
 
     &--open {
+      display: block;
       position: absolute;
       top: 45px;
       right: -20px;
       z-index: 1;
-      display: block;
       padding: 20px 0 0 50px;
       width: 195px;
       height: 140px;
@@ -60,6 +61,7 @@
   }
 
   &__link {
+    font-size: 14px;
     font-weight: 700;
     text-transform: lowercase;
 

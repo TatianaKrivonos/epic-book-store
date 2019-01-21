@@ -37,6 +37,7 @@ let toggle = document.getElementById('toggle');
 
 //jQuery
 $(document).ready(function(){
+
   $('.j-slider').slick({
     infinite: false
   });

@@ -4,6 +4,7 @@
   "description": "Start project.",
   "scripts": {
     "start": "gulp",
+    "build": "npm start build",
     "test": "stylelint \"src/scss/**/*.scss\" --syntax=scss",
     "format": "stylefmt -r src/scss/**/*.scss",
     "lint-staged": "lint-staged",
@@ -25,6 +26,7 @@
     "autoprefixer": "^9.0.2",
     "babel-loader": "^8.0.4",
     "browser-sync": "^2.14.0",
+    "cross-env": "^5.2.0",
     "del": "^3.0.0",
     "gh-pages": "^2.0.1",
     "gulp": "^4.0.0",

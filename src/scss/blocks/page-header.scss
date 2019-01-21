@@ -5,13 +5,13 @@
   &__container {
     margin: 0 auto;
     width: 100%;
-    padding: 20px 30px;
+    padding: 20px 30px 10px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 
     @media (min-width: $screen-md) {
-      padding: 20px 0;
+      padding: 20px 0 10px;
       width: 760px;
       justify-content: flex-start;
     }
@@ -31,7 +31,8 @@
 
     @media (min-width: $screen-md) {
       display: block;
-      padding-left: 33px;
+      padding-left: 30px;
+      font-size: 14px;
       flex-grow: 2;
     }
   }

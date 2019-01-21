@@ -159,6 +159,11 @@ function serve() {
   ));
 }
 
+exports.build = series(
+  clean,
+  parallel(styles, copyHTML, copyImg, buildSvgSprite, copyFonts, copyVendorsJs, javascript, jquery)
+)
+
 exports.default = series(
   clean,
   parallel(styles, copyHTML, copyImg, buildSvgSprite, copyFonts, copyVendorsJs, javascript, jquery),
