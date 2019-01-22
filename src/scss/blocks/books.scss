@@ -46,7 +46,7 @@
     }
 
     @media (min-width: $screen-lg) {
-      margin-bottom: 0;
+      margin-bottom: 5px;
     }
 
     p:first-child {
@@ -72,6 +72,7 @@
 
     @media (min-width: $screen-lg) {
       margin-bottom: 25px;
+      max-height: 455px;
     }
   }
 
@@ -89,6 +90,7 @@
     }
 
     @media (min-width: $screen-lg) {
+      max-height: 480px;
       padding: 16px;
       margin-top: 0;
       margin-bottom: 0;
