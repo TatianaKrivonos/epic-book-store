@@ -114,8 +114,8 @@
       background-image: linear-gradient(rgba(15, 15, 201, 0.7), rgba(15, 15, 201, 0.7)), url('../../img/rec-bookA.png');
 
       p:first-child {
-        margin-bottom: 25px;
-        padding-top: 30px;
+        margin-bottom: 5px;
+        padding-top: 25px;
         font-size: 24px;
         font-weight: 700;
       }
@@ -152,7 +152,7 @@
       grid-area: block4;
       display: flex;
       flex-direction: column;
-      padding: 25px 15px 10px 10px;
+      padding: 20px 15px 10px 10px;
       background-color: #fff;
 
       p {
@@ -166,6 +166,7 @@
         width: 100%;
         background-color: #000;
         color: #fff;
+        font-size: 14px;
         font-weight: 700;
         text-align: center;
 
@@ -181,14 +182,14 @@
 
     &--5 {
       grid-area: block5;
-      padding: 25px 15px;
+      padding: 20px 10px 20px 15px;
       background-color: $third-color;
       color: #fff;
     }
 
     &--6 {
       grid-area: block6;
-      padding: 65px 10px 30px 10px;
+      padding: 60px 10px 30px 10px;
       color: #fff;
       text-align: center;
       background-color: $third-color;
@@ -198,6 +199,10 @@
         margin-bottom: 20px;
         font-size: 24px;
         font-weight: 700;
+
+        @media (min-width: $screen-lg) {
+          margin-bottom: 0;
+        }
       }
 
       @media (min-width: $screen-md) {
@@ -215,6 +220,7 @@
 
       h3 {
         line-height: 30px;
+        margin-bottom: 5px;
       }
 
       p {
