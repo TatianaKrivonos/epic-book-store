@@ -19,9 +19,9 @@ a {
   color: #000;
   text-decoration: none;
 
-	  &:hover {
-		  text-decoration: none;
-	  }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 img {
@@ -51,5 +51,5 @@ button:focus,
 input,
 input:active,
 input:focus {
-    outline: none;
+  outline: none;
 }

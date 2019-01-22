@@ -4,51 +4,51 @@
   margin: 0 10px;
   border: 8px solid $gray-lighter;
 
+  @media (min-width: $screen-md) {
+    margin: 0 40px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin: 0 auto;
+    width: 1220px;
+  }
+
+  &:after,
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 8px;
+    background-color: $gray-lightest;
+  }
+
+  &:before {
+    top: -8px;
+    left: 52px;
+    width: 150px;
+
     @media (min-width: $screen-md) {
-      margin: 0 40px;
+      width: 170px;
     }
 
     @media (min-width: $screen-lg) {
-      margin: 0 auto;
-      width: 1220px;
+      width: 400px;
+    }
+  }
+
+  &:after {
+    bottom: -8px;
+    right: 52px;
+    width: 110px;
+
+    @media (min-width: $screen-md) {
+      width: 280px;
     }
 
-    &:after,
-    &:before {
-      position: absolute;
-      display: block;
-      content: '';
-      height: 8px;
-      background-color: $gray-lightest;
+    @media (min-width: $screen-lg) {
+      width: 740px;
     }
-
-    &:before {
-      top: -8px;
-      left: 52px;
-      width: 150px;
-
-      @media (min-width: $screen-md) {
-        width: 170px;
-      }
-
-      @media (min-width: $screen-lg) {
-        width: 400px;
-      }
-    }
-
-    &:after {
-      bottom: -8px;
-      right: 52px;
-      width: 110px;
-
-      @media (min-width: $screen-md) {
-        width: 280px;
-      }
-
-      @media (min-width: $screen-lg) {
-        width: 740px;
-      }
-    }
+  }
 
   &__container {
     margin: 0 auto;

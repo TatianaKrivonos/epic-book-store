@@ -3,19 +3,19 @@
   width: 260px;
   text-align: center;
 
-    &__img {
-      margin-bottom: 40px;
-    }
+  &__img {
+    margin-bottom: 40px;
+  }
 
-    @media (min-width: $screen-md) {
-      margin-right: 100px;
+  @media (min-width: $screen-md) {
+    margin-right: 100px;
 
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
-    }
-
-    @media (min-width: $screen-lg) {
+    &:nth-child(2n) {
       margin-right: 0;
     }
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-right: 0;
+  }
 }

@@ -74,12 +74,12 @@
 
   &__form-wrap {
 
-     @media (min-width: $screen-lg) {
+    @media (min-width: $screen-lg) {
       display: flex;
       flex-wrap: wrap;
       margin-top: 40px;
       justify-content: space-between;
-     }
+    }
   }
 
   &__input {
@@ -103,9 +103,9 @@
 
       @media (min-width: $screen-md) {
         margin-right: 30px;
-     }
+      }
 
-     @media (min-width: $screen-lg) {
+      @media (min-width: $screen-lg) {
         margin: 0;
       }
     }
@@ -242,7 +242,6 @@
   }
 
   &__success {
-
 
   }
 

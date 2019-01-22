@@ -9,14 +9,14 @@
   }
 
   @media (min-width: $screen-md) {
-       padding-bottom: 0;
+    padding-bottom: 0;
   }
 
   &__item-wrap {
 
     @media (min-width: $screen-lg) {
-        display: flex;
-        padding-left: 60px;
+      display: flex;
+      padding-left: 60px;
     }
   }
 
