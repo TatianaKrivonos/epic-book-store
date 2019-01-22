@@ -27,11 +27,16 @@ import bookCardTemplate from '../js/modules/bookCardTemplate.js';
 
 // кнопка меню
 let toggle = document.getElementById('toggle');
+let menu = document.getElementById('menuList');
+
+  toggle.classList.remove('toggle--close');
+  menu.classList.remove('main-nav__list--open');
+
   toggle.addEventListener('click', menuVisible);
   function menuVisible(e) {
     e.preventDefault();
     toggle.classList.toggle('toggle--close');
-    document.getElementById('menuList').classList.toggle('main-nav__list--open');
+    menu.classList.toggle('main-nav__list--open');
   };
 
 
