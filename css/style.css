@@ -726,7 +726,7 @@ input:focus {
   color: transparent;
   background-color: #f4d4e4;
   border-radius: 50%;
-  background-image: url("../../img/arrow.png");
+  background-image: url(../img/arrow.png);
   background-repeat: no-repeat;
   background-position: 17px 12px; }
   @media (min-width: 840px) {
@@ -734,7 +734,7 @@ input:focus {
       top: 50%; } }
   .slick-arrow:hover {
     background-color: #ef529f;
-    background-image: url("../../img/arrow-white.png"); }
+    background-image: url(../img/arrow-white.png); }
 
 .slick-prev {
   left: 100px;
@@ -752,7 +752,7 @@ input:focus {
 
 .slick-disabled {
   background-color: #e8e8e8;
-  background-image: url("../../img/arrow-white.png");
+  background-image: url(../img/arrow-white.png);
   pointer-events: none; }
 
 .catalog {
