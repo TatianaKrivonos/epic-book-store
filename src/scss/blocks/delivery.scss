@@ -88,5 +88,9 @@
     @media (min-width: $screen-md) {
       justify-content: flex-start;
     }
+
+    @media (min-width: $screen-lg) {
+      justify-content: space-between;
+    }
   }
 }
