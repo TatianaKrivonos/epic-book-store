@@ -5,14 +5,16 @@
     margin: 0 auto;
     padding-left: 30px;
     padding-top: 100px;
-    width: 1160px;
+    width: 100%;
 
     @media (min-width: $screen-md) {
       padding-left: 40px;
+      width: 760px;
     }
 
     @media (min-width: $screen-lg) {
       padding: 120px 0 46px;
+      width: 1160px;
     }
   }
 
@@ -41,8 +43,7 @@
     overflow-x: scroll;
 
     @media (min-width: $screen-lg) {
-      margin: 0;
-      width: 100%;
+      width: 1160px;
       overflow-x: hidden;
     }
   }
@@ -58,6 +59,11 @@
   }
 
   & .product-card {
+    margin-right: 40px;
+
+    @media (min-width: $screen-md) {
+      margin-right: 0;
+    }
 
     &__img {
       width: 260px;
