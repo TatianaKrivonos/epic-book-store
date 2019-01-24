@@ -21,7 +21,7 @@
 			</a>
 			<div class="page-header__work-time">с 9:00 до 19:00</div>
 			<nav class="page-header__main-nav main-nav">
-				<ul class="main-nav__list" id="menuList">
+				<ul class="main-nav__list main-nav__list--open" id="menuList">
 					<li class="main-nav__item">
 						<a href="./books.html" class="main-nav__link">Книги</a>
 					</li>
@@ -48,7 +48,7 @@
             <use xlink:href="img/sprite.svg#button_phone"></use>
           </svg>
 				</a>
-				<button class="main-nav__icon toggle" id="toggle">
+				<button class="main-nav__icon toggle toggle--close" id="toggle">
           <span></span>
         </button>
 			</nav>
@@ -165,13 +165,13 @@
 					</div>
 					<div class="delivery__card  advantage-card">
 						<svg width="70" height="45" class="advantage-card__img">
-              <use xlink:href="img/sprite.svg#icon_delivery"></use>
+              <use xlink:href="img/sprite.svg#icon_box"></use>
             </svg>
 						<p class="advantage-card__descr">Мы подарим вам "Набор читателя" и добавим посылку.</p>
 					</div>
 					<div class="delivery__card  advantage-card">
 						<svg width="60" height="45" class="advantage-card__img">
-              <use xlink:href="img/sprite.svg#icon_box"></use>
+              <use xlink:href="img/sprite.svg#icon_delivery"></use>
             </svg>
 						<p class="advantage-card__descr">Бесплатно доставляем заказы от 3 000 по всей России.</p>
 					</div>
@@ -254,8 +254,7 @@
 			</div>
 		</div>
 	</footer>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src ="js/script.js"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src ="js/script.min.js"></script>
 </body>
 </html>
