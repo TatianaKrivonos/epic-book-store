@@ -116,6 +116,51 @@
     }
   }
 
+  &__pages-open-wrap {
+    display: none;
+    position: relative;
+    width: 780px;
+    z-index: 10;
+
+    & .close-btn {
+      position: absolute;
+      right: 0;
+      top: -5px;
+      width: 10px;
+      height: 10px;
+      background-color: transparent;
+      background-image: url('../../img/icon_close.png');
+      background-repeat: no-repeat;
+      border: 0;
+    }
+  }
+
+  &__pages-open {
+    width: 760px;
+    height: 460px;
+    border-radius: 5px;
+    background-color: $main-color;
+
+    & .books__pages-img {
+      margin: 10px 215px 0;
+      width: 330px;
+      height: 440px;
+
+      img {
+        width: 330px;
+        height: 440px;
+      }
+    }
+
+    & .slick-prev {
+      left: 40px;
+    }
+
+    & .slick-next {
+      right: 40px;
+    }
+  }
+
   &__info {
     grid-area: books__info;
   }

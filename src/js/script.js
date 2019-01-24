@@ -68,6 +68,11 @@ $(document).ready(function(){
   $(".paginator__link").click(function( event ) {
     event.preventDefault();
   });
+
+  $('.j-pages-open').slick({
+
+  });
+
 });
 
 //объект данныхдля ajax запроса
