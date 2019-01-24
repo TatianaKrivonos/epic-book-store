@@ -13,7 +13,7 @@
                          'books__descr';
 
     @media (min-width: $screen-md) {
-      padding: 40px 0 0;
+      padding: 35px 0 0;
       width: 760px;
       grid-template-columns: 260px 540px;
       grid-column-gap: 40px;
@@ -46,11 +46,11 @@
     }
 
     @media (min-width: $screen-lg) {
-      margin-bottom: 5px;
+      margin-bottom: 20px;
     }
 
     p:first-child {
-      margin-bottom: 15px;
+      margin-bottom: 0;
       font-size: 14px;
       font-weight: 700;
     }
@@ -169,22 +169,22 @@
     display: flex;
 
     li {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+      font-size: 14px;
     }
   }
 
   &__features-list {
-    margin-right: 50px;
-    font-size: 14px;
+    margin-right: 25px;
+    margin-bottom: 50px;
     color: #ababab;
   }
 
   &__features-descr {
-    font-size: 14px;
 
     li:last-child {
       position: relative;
-      display: flex;
+      font-size: 16px;
       font-weight: 700;
     }
   }
@@ -217,8 +217,7 @@
   }
 
   &__btn {
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     padding: 15px 0;
     width: 100%;
     color: #fff;
@@ -258,20 +257,24 @@
       content: '';
       width: 15px;
       height: 15px;
-      background-image: url('../../img/icon-like.svg');
+      background-image: url(../img/icon-like.svg);
       background-repeat: no-repeat;
       background-position: 0 2px;
     }
 
     span {
       font-size: 14px;
-      padding-left: 20px;
+      padding-left: 25px;
       font-style: italic;
     }
   }
 
   &__descr {
     grid-area: books__descr;
+
+    @media (min-width: $screen-lg) {
+      padding-right: 280px;
+    }
   }
 
   &__descr-title {
@@ -281,7 +284,8 @@
   }
 
   &__descr-text {
-    margin-bottom: 30px;
+    line-height: 24px;
+    margin-bottom: 25px;
 
     &--hide {
       display: none;
@@ -307,14 +311,14 @@
       content: '';
       width: 15px;
       height: 15px;
-      background-image: url('../../img/arrow-down.svg');
+      background-image: url(../img/arrow-down.svg);
       background-repeat: no-repeat;
       background-position-y: 4px;
     }
   }
 
   &__socials {
-    margin-top: 40px;
+    margin-top: 45px;
   }
 
   &__socials-list {

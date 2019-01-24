@@ -10,7 +10,7 @@
   color: transparent;
   background-color: $third-color-light;
   border-radius: 50%;
-  background-image: url('../../img/arrow.png');
+  background-image: url(../img/arrow.png);
   background-repeat: no-repeat;
   background-position: 17px 12px;
 
@@ -20,7 +20,7 @@
 
   &:hover {
     background-color: $third-color-dark;
-    background-image: url('../../img/arrow-white.png');
+    background-image: url(../img/arrow-white.png);
   }
 }
 
@@ -43,6 +43,6 @@
 
 .slick-disabled {
   background-color: $gray-lighter;
-  background-image: url('../../img/arrow-white.png');
+  background-image: url(../img/arrow-white.png);
   pointer-events: none;
 }

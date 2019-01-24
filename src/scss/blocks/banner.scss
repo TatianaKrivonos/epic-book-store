@@ -1,6 +1,6 @@
 .banner {
   padding: 70px 25px 100px 25px;
-  background-image: linear-gradient(rgba(181, 77, 134, 0.8), rgba(181, 77, 134, 0.8)), url('../../img/banner.png');
+  background-image: linear-gradient(rgba(181, 77, 134, 0.8), rgba(181, 77, 134, 0.8)), url(../img/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $third-color;
@@ -31,7 +31,7 @@
         margin-bottom: 30px;
         width: 100px;
         height: 15px;
-        background-image: url('../../img/shape.svg');
+        background-image: url(../img/shape.svg);
         background-repeat: no-repeat;
       }
     }

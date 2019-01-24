@@ -12,7 +12,7 @@
     }
 
     @media (min-width: $screen-lg) {
-      padding-left: 0;
+      padding: 120px 0 46px;
     }
   }
 
@@ -50,7 +50,7 @@
   &__row {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 25px;
 
     @media (min-width: $screen-md) {
       width: 1160px;
