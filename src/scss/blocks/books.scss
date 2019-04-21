@@ -333,8 +333,22 @@
     font-weight: 700;
     margin-right: 30px;
 
+    &.active {
+
+      svg {
+        fill: $second-color;
+      }
+
+      div {
+        color: $second-color;
+      }
+    }
+
     &:hover {
-      color: $third-color-dark;
+
+      div {
+        color: $third-color-dark;
+      }
 
       svg {
         fill: $third-color-dark;

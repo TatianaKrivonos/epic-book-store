@@ -47,25 +47,25 @@ $(document).ready(function(){
     infinite: false
   });
 
-  $(".catalog__tab-link--all").addClass("active");
+  $('.catalog__tab-link--all').addClass('active');
 
-  $(".catalog__tab-link").on("click", function(){
-    $(".catalog__tab-link").removeClass("active");
-    $(this).addClass("active");
+  $('.catalog__tab-link').on('click', function(){
+    $('.catalog__tab-link').removeClass('active');
+    $(this).addClass('active');
   });
 
-  $(".paginator__link--first").addClass("active");
+  $('.paginator__link--first').addClass('active');
 
-  $(".paginator__link").on("click", function(){
-    $(".paginator__link").removeClass("active");
-    $(this).addClass("active");
+  $('.paginator__link').on('click', function(){
+    $('.paginator__link').removeClass('active');
+    $(this).addClass('active');
   });
 
-  $(".books__descr-btn").click(function(){
-    $(".books__descr-text--hide").toggle('slow');
+  $('.books__descr-btn').click(function(){
+    $('.books__descr-text--hide').toggle('slow');
   });
 
-  $(".paginator__link").click(function( event ) {
+  $('.paginator__link').click(function(event) {
     event.preventDefault();
   });
 
@@ -73,6 +73,14 @@ $(document).ready(function(){
 
   });
 
+  $('.books__socials-item').on('click', function(){
+    $(this).toggleClass('active');
+  });
+
+  $('.books__socials-item button').on('click', function(){
+    let $this = $(this).siblings('div');
+    $this.html(+$this.html()+1);
+  });
 });
 
 //объект данныхдля ajax запроса
